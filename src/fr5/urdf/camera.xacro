@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="setup_camera" params="parent_link xyz rpy">
+
+    <joint name="camera_joint" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent_link}"/>
+      <child link="camera_link"/>
+    </joint>
+
+    <link name="camera_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><box size="0.05 0.05 0.1"/></geometry>
+        <material name="red"><color rgba="1 0 0 1"/></material>
+      </visual>
+      <collision>
+        <geometry><box size="0.05 0.05 0.1"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="0.1" />
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+      </inertial>
+    </link>
+
+    <gazebo reference="camera_link">
+      <material>Gazebo/Red</material>
+      <sensor type="camera" name="camera_sensor">
+        <update_rate>30.0</update_rate>
+        <camera>
+          <horizontal_fov>0.8</horizontal_fov>
+          <image><width>640</width><height>480</height><format>R8G8B8</format></image>
+          <clip><near>0.02</near><far>300</far></clip>
+        </camera>
+        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+          <camera_name>narrow_stereo</camera_name>
+          <frame_name>camera_link</frame_name>
+          <hack_baseline>0.07</hack_baseline>
+        </plugin>
+      </sensor>
+    </gazebo>
+  </xacro:macro>
+</robot>

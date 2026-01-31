@@ -1,0 +1,12 @@
+minipulator:
+  # 求解器插件 (保持不变)
+  kinematics_solver: trac_ik_kinematics_plugin/TRAC_IKKinematicsPlugin
+
+  # 超时时间：建议稍微放宽到 0.05秒 (50毫秒)，给它多一点点思考时间，防止复杂姿态算不出来
+  kinematics_solver_timeout: 0.05
+  
+  # 精度 (保持不变)
+  kinematics_solver_search_resolution: 0.005
+  
+  # 【关键修改】改成 Distance，动作会顺滑很多！
+  solve_type: Distance

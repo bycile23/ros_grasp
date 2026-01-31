@@ -1,0 +1,32 @@
+# 此文件由 MoveIt 使用，用于对接 ros2_control
+# 请确保此文件位于你的 MoveIt 配置包中
+
+controller_manager:
+  ros__parameters:
+    controller_names:
+      - fr5_joint_trajectory_controller
+      - gripper_controller
+
+    # 1. 机械臂对接配置
+    fr5_joint_trajectory_controller:
+      action_ns: follow_joint_trajectory
+      type: FollowJointTrajectory
+      default: true
+      joints:
+        - joint1
+        - joint2
+        - joint3
+        - joint4
+        - joint5
+        - joint6
+
+    # 2. 夹爪对接配置
+    gripper_controller:
+      # 【关键】这里必须匹配 Python 脚本中使用的 Action 类型
+      # 你的 Python 脚本使用的是 GripperCommand，所以这里也要配成 GripperCommand
+      action_ns: gripper_cmd
+      type: GripperCommand
+      default: true
+      joints:
+        - left_finger_joint
+        # 再次强调：不需要写 right_finger_joint

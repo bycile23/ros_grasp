@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <model name="black_table">
+      <static>true</static>
+      <pose>0.8 0 0.15 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.3 0.3 0.3</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.3 0.3 0.3</size></box></geometry>
+          <material>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Black</name></script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="green_can">
+      <pose>0.65 0 0.35 0 0 0</pose>
+      <link name="link">
+        <inertial><mass>0.1</mass></inertial>
+        <collision name="collision">
+           <surface>
+            <friction>
+              <ode><mu>100.0</mu><mu2>100.0</mu2></ode>
+            </friction>
+          </surface>
+          <geometry><cylinder><radius>0.03</radius><length>0.1</length></cylinder></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.1</length></cylinder></geometry>
+          <material>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Green</name></script>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

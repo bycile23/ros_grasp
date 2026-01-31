@@ -1,0 +1,36 @@
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - fr5_joint_trajectory_controller
+    - gripper_controller
+
+  fr5_joint_trajectory_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+    # 【关键修改】添加约束，告诉 MoveIt 不要因为一点点误差就报错退出
+    constraints:
+      goal_time: 2.0                   # 允许动作结束时有 2秒 的稳定期
+      stopped_velocity_tolerance: 0.5  # 允许还没完全停死（有微小速度）时就开始下一步
+
+  gripper_controller:
+    type: GripperCommand
+    action_ns: gripper_cmd
+    default: true
+    joints:
+      - left_finger_joint
+
+trajectory_execution:
+  allowed_execution_duration_scaling: 1.2
+  allowed_goal_duration_margin: 0.5
+  # 【关键修改】从 0.05 改为 0.2，解决 "start point deviates" 报错
+  allowed_start_tolerance: 0.2
+  execution_duration_monitoring: false
