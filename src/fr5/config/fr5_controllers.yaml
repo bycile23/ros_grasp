@@ -1,13 +1,22 @@
-controller_manager:controller_manager:
+controller_manager:
   ros__parameters:
-    update_rate: 1000
+    update_rate: 1000  # Hz
+
+    # 1. 机械臂本体控制器
     fr5_joint_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
+
+    # 2. 夹爪控制器
     gripper_controller:
       type: position_controllers/GripperActionController
+
+    # 3. 状态发布器
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
+# ------------------------------------------------------------------
+# 机械臂控制器参数 (纯位置控制，仿真中绝对不会下垂)
+# ------------------------------------------------------------------
 fr5_joint_trajectory_controller:
   ros__parameters:
     joints:
@@ -18,9 +27,9 @@ fr5_joint_trajectory_controller:
       - joint5
       - joint6
     
-    # 【关键修改】这里必须是 effort，才能让 PID 产生扭矩去对抗重力
+    # 强制指定为 position 接口
     command_interfaces:
-      - effort
+      - position
     
     state_interfaces:
       - position
@@ -28,22 +37,28 @@ fr5_joint_trajectory_controller:
     
     state_publish_rate: 50.0
     action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    # 开启开环控制，Gazebo 会强制将位置指令写入物理引擎
+    open_loop_control: true
+    allow_integration_in_goal_trajectories: true
     
-    # PID 参数 (之前你加的这些，现在终于能派上用场了！)
-    gains:
-      joint1: {p: 20000.0, i: 500.0, d: 200.0, i_clamp: 1000.0}
-      joint2: {p: 20000.0, i: 500.0, d: 200.0, i_clamp: 1000.0}
-      joint3: {p: 15000.0, i: 300.0, d: 150.0, i_clamp: 500.0}
-      joint4: {p: 10000.0, i: 200.0, d: 100.0, i_clamp: 500.0}
-      joint5: {p: 5000.0,  i: 100.0, d: 50.0,  i_clamp: 100.0}
-      joint6: {p: 2000.0,  i: 50.0,  d: 20.0,  i_clamp: 50.0}
+    constraints:
+      stopped_velocity_tolerance: 0.2
+      goal_time: 0.0
 
+# ------------------------------------------------------------------
+# 夹爪控制器参数
+# ------------------------------------------------------------------
 gripper_controller:
   ros__parameters:
     joint: left_finger_joint
+    
     action_monitor_rate: 20.0
     goal_tolerance: 0.02
     max_effort: 500.0
     allow_stalling: true 
+    stall_velocity_threshold: 0.001
+    stall_timeout: 1.0
+    
     gains:
       left_finger_joint: {p: 2000.0, i: 10.0, d: 20.0, i_clamp: 50.0}
