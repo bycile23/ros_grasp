@@ -29,33 +29,22 @@ class GraspingDemo(Node):
         # ==========================================
         self.GRIPPER_LENGTH = 0.155  
         self.HOVER_OFFSET   = 0.10   # 抓取前在物体上方 10 厘米悬停
-        self.GRASP_DEPTH    = 0.05   # 夹爪往下“咬”住物体的深度（完美避开桌面）
-        self.SAFETY_Z_LIFT  = 0.25   # 抓完抬起的高度
+        self.GRASP_DEPTH    = 0.14  # 夹爪往下“咬”住物体的深度
+        self.SAFETY_Z_LIFT  = 0.10   # 抓完抬起的高度
+        self.X_OFFSET       = -0.117  # 往后退偏移量
         # ==========================================
 
-        # TF 相关
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
-        
-        # 夹爪 Action 客户端
         self.gripper_client = ActionClient(self, GripperCommand, '/gripper_controller/gripper_cmd')
-        
-        # 视觉目标订阅
         self.target_sub = self.create_subscription(PointStamped, '/vision/target_point', self.target_callback, 10)
-        
-        # 【核心1】关节状态订阅（计算笛卡尔路径必须）
         self.joint_state_sub = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, 10)
-        
-        # 【核心2】笛卡尔直线规划服务
         self.cartesian_client = self.create_client(GetCartesianPath, '/compute_cartesian_path')
-        
-        # 【核心3】直接暴力下发轨迹，完美免疫 Error Code -4
         self.trajectory_pub = self.create_publisher(JointTrajectory, '/fr5_joint_trajectory_controller/joint_trajectory', 10)
 
         self.robot_base_frame = "base_link"
         self.end_effector_link = "tool0"
 
-        # 启动初始化线程
         threading.Thread(target=self.init_sequence, daemon=True).start()
 
     def joint_state_callback(self, msg):
@@ -63,7 +52,6 @@ class GraspingDemo(Node):
         self.joint_state_received = True
 
     def spin_and_sleep(self, duration):
-        """带 ROS 事件循环的睡眠，保证通信不阻塞"""
         end_time = time.time() + duration
         while time.time() < end_time and rclpy.ok() and not self.stop_flag:
             time.sleep(0.05)
@@ -78,17 +66,32 @@ class GraspingDemo(Node):
             time.sleep(0.1)
 
         self.get_logger().info("✅ 服务就绪，执行初始复位...")
-        self.control_gripper(0.04) # 先张开爪子
+        self.control_gripper(0.0) # 张开爪子
         
-        # 【直接下发复位姿态，不给 MoveIt 报错的机会】
+        # ==================== 🛠️ 兼容性修复核心 ====================
         msg = JointTrajectory()
-        msg.joint_names = ['joint1', 'joint2', 'joint3', 'joint4', 'joint5', 'joint6']
-        point = JointTrajectoryPoint()
-        point.positions = [0.0, 0.0, 1.57, 0.0, 1.57, 0.0]  # 爪子垂直朝下
-        point.time_from_start.sec = 3
-        msg.points.append(point)
+        # 动态获取当前系统所有的关节名称，确保和控制器完全对应
+        msg.joint_names = list(self.current_joint_state.name)
+        
+        # 起点：使用当前完整位置
+        start_point = JointTrajectoryPoint()
+        start_point.positions = list(self.current_joint_state.position)
+        start_point.time_from_start.sec = 0
+        msg.points.append(start_point)
+
+        # 终点：只修改前6个关节，后面的（夹爪等）保持不变
+        end_point = JointTrajectoryPoint()
+        target_positions = list(self.current_joint_state.position)
+        # 设置机械臂的复位姿态 (前6位)
+        target_positions[0:6] = [0.0, -1.57, 1.57, -1.57, -1.57, 0.0]
+        
+        end_point.positions = target_positions
+        end_point.time_from_start.sec = 2 # 2秒平稳移动
+        msg.points.append(end_point)
+        
         self.trajectory_pub.publish(msg)
-        self.spin_and_sleep(3.5)
+        self.spin_and_sleep(2.5)
+        # =====================================================
         
         self.get_logger().info("✅ 复位完成，等待视觉目标...")
         self.robot_is_ready = True
@@ -110,30 +113,27 @@ class GraspingDemo(Node):
             self.get_logger().error(f"TF 变换失败: {e}")
 
     def get_current_pose(self):
-        """获取当前法兰盘位姿，用于直线规划的起点"""
         try:
             t = self.tf_buffer.lookup_transform(self.robot_base_frame, self.end_effector_link, rclpy.time.Time())
             pose = Pose()
             pose.position.x = t.transform.translation.x
             pose.position.y = t.transform.translation.y
             pose.position.z = t.transform.translation.z
-            pose.orientation = t.transform.rotation # 永远锁定这个姿态！
+            pose.orientation = t.transform.rotation 
             return pose
         except Exception as e:
             self.get_logger().error(f"无法获取当前位姿: {e}")
             return None
 
     def move_straight_line(self, target_x, target_y, target_z, duration=2.0):
-        """绝对直线运动，手腕完全不转"""
         if self.stop_flag: return False
         
         start_pose = self.get_current_pose()
         if not start_pose: return False
 
-        # 生成目标点（姿态完全复制起点，杜绝乱转）
         target_pose = copy.deepcopy(start_pose)
-        target_pose.position.x = target_x
-        target_pose.position.y = target_y
+        target_pose.position.x = target_x + self.X_OFFSET
+        target_pose.position.y = target_y + 0.005 # 稍微偏置
         target_pose.position.z = target_z
 
         req = GetCartesianPath.Request()
@@ -143,7 +143,7 @@ class GraspingDemo(Node):
         req.group_name = self.planning_group
         req.link_name = self.end_effector_link
         req.waypoints = [target_pose]
-        req.max_step = 0.01  # 每 1cm 插补一次，绝对直线
+        req.max_step = 0.01 
         req.jump_threshold = 0.0
 
         future = self.cartesian_client.call_async(req)
@@ -156,15 +156,14 @@ class GraspingDemo(Node):
             self.get_logger().error(f"❌ 直线规划失败，只完成了 {res.fraction*100:.1f}%")
             return False
 
-        # 重新分配平滑时间
         trajectory = res.solution.joint_trajectory
+        # 同样确保直线规划下发的 trajectory 包含正确的 joint_names
         time_per_point = duration / len(trajectory.points)
         for i, point in enumerate(trajectory.points):
             t = (i + 1) * time_per_point
             point.time_from_start.sec = int(t)
             point.time_from_start.nanosec = int((t - int(t)) * 1e9)
             
-        # 暴力下发给控制器！免疫一切公差报错！
         self.trajectory_pub.publish(trajectory)
         self.spin_and_sleep(duration + 0.2)
         return True
@@ -173,7 +172,7 @@ class GraspingDemo(Node):
         if self.stop_flag: return
         goal = GripperCommand.Goal()
         goal.command.position = position
-        goal.command.max_effort = 200.0 
+        goal.command.max_effort = 150.0 
         future = self.gripper_client.send_goal_async(goal)
         start_time = time.time()
         while not future.done() and time.time() - start_time < 3.0:
@@ -185,34 +184,28 @@ class GraspingDemo(Node):
         obj_y = target_in_base.point.y
         obj_z = target_in_base.point.z
 
-        # TCP（法兰盘）的高度计算
         hover_z = obj_z + self.GRIPPER_LENGTH + self.HOVER_OFFSET
         grasp_z = obj_z + self.GRIPPER_LENGTH - self.GRASP_DEPTH
 
         self.get_logger().info(f"--- 🚀 启动【直线插补】安全抓取流程 ---")
-
         self.get_logger().info("--- 1. 移动到正上方悬停 ---")
         if not self.move_straight_line(obj_x, obj_y, hover_z, duration=3.0): return
-        
         self.get_logger().info("--- 2. 垂直下降抓取 ---")
         if not self.move_straight_line(obj_x, obj_y, grasp_z, duration=1.5): return
-        
         self.get_logger().info("--- 3. 闭合夹爪 ---")
-        self.control_gripper(0.012) 
-        
+        # 尝试使用较小的闭合值，防止物理引擎冲突
+        self.control_gripper(0.01)  
         self.get_logger().info("--- 4. 垂直抬起 ---")
         if not self.move_straight_line(obj_x, obj_y, hover_z + self.SAFETY_Z_LIFT, duration=2.0): return
-        
-        self.get_logger().info("🎉 抓取任务完美结束！(停留在半空，不再乱动)")
+        self.get_logger().info("🎉 抓取任务完美结束！")
 
 def main(args=None):
     rclpy.init(args=args)
     node = GraspingDemo()
-    
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.get_logger().info("🛑 收到退出信号，正在停止...")
+        node.get_logger().info("🛑 收到退出信号...")
         node.stop_flag = True 
     finally:
         node.destroy_node()
