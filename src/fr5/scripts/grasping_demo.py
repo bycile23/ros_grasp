@@ -22,6 +22,7 @@ class GraspingDemo(Node):
         self.stop_flag = False 
         self.joint_state_received = False
         self.current_joint_state = None
+        self.planning_group = "minipulator"
 
         # ==========================================
         # 🔧 抓取高度参数配置
@@ -83,7 +84,7 @@ class GraspingDemo(Node):
         msg = JointTrajectory()
         msg.joint_names = ['joint1', 'joint2', 'joint3', 'joint4', 'joint5', 'joint6']
         point = JointTrajectoryPoint()
-        point.positions = [0.0, -1.57, 0.0, -1.57, 0.0, 0.0]  # 爪子垂直朝下
+        point.positions = [0.0, 0.0, 1.57, 0.0, 1.57, 0.0]  # 爪子垂直朝下
         point.time_from_start.sec = 3
         msg.points.append(point)
         self.trajectory_pub.publish(msg)
