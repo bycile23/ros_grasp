@@ -6,9 +6,9 @@ controller_manager:
     fr5_joint_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-    # 2. 夹爪控制器
+    # 2. 夹爪控制器 (🌟 修改为联合位置控制器)
     gripper_controller:
-      type: position_controllers/GripperActionController
+      type: position_controllers/JointGroupPositionController
 
     # 3. 状态发布器
     joint_state_broadcaster:
@@ -51,14 +51,8 @@ fr5_joint_trajectory_controller:
 # ------------------------------------------------------------------
 gripper_controller:
   ros__parameters:
-    joint: left_finger_joint
-    
-    action_monitor_rate: 20.0
-    goal_tolerance: 0.02
-    max_effort: 500.0
-    allow_stalling: true 
-    stall_velocity_threshold: 0.001
-    stall_timeout: 1.0
-    
-    gains:
-      left_finger_joint: {p: 2000.0, i: 10.0, d: 20.0, i_clamp: 50.0}
+    # 🌟 同时下发指令给左指和右指，真正实现对称夹取
+    joints:
+      - left_finger_joint
+      - right_finger_joint
+    interface_name: position
