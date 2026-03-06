@@ -42,6 +42,9 @@ fr5_joint_trajectory_controller:
     open_loop_control: true
     allow_integration_in_goal_trajectories: true
     
+    # 👇👇 修复废弃警告：强制要求轨迹终点速度必须为0 👇👇
+    allow_nonzero_velocity_at_trajectory_end: false
+    
     constraints:
       stopped_velocity_tolerance: 0.2
       goal_time: 0.0

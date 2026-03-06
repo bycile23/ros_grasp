@@ -122,7 +122,7 @@ class GraspingDemo(Node):
         
         self.get_logger().info(">>> 3. 闭合夹爪执行抓取")
         self.control_gripper(self.GRIPPER_CLOSE)  
-        time.sleep(1.5) # 等待物理引擎稳定
+        time.sleep(2) # 等待物理引擎稳定
         
         self.get_logger().info(">>> 4. 抓取成功，平稳垂直抬起")
         if not self.move_vertical(safe_z, duration=2.0): return
