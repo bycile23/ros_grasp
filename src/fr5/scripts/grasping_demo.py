@@ -139,6 +139,7 @@ class GraspingDemo(Node):
         self.get_logger().info(">>> 6. 纯垂直下降至新桌面高度")
         # 锁定旋转后完美的 XY 姿态，纯垂直下降，保留 1.5cm 缓冲防止物理弹跳
         if not self.move_vertical(grasp_z + 0.015, duration=2.0): return
+        time.sleep(1.0) 
 
         self.get_logger().info(">>> 7. 张开夹爪，平稳释放物体")
         self.control_gripper(self.GRIPPER_OPEN)
