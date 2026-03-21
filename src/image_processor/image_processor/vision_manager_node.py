@@ -55,7 +55,7 @@ class VisionManager(Node):
                 rel_y_m = (obj_pixel_y - self.img_centre_y) / self.pixels_permm_y
 
                 # 🌟 X 对应 X
-                abs_x = self.camera_x - rel_x_m
+                abs_x = self.camera_x - rel_x_m-0.01
 
                 # 💡 终极暴力的分类补偿：按正负数抹平 3D 视差！
                 if rel_y_m >= 0:

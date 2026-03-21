@@ -2,6 +2,12 @@
 <sdf version="1.6">
   <world name="default">
   
+  <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+    </plugin>
+
     <include><uri>model://sun</uri></include>
     <include><uri>model://ground_plane</uri></include>
 
@@ -34,7 +40,7 @@
     </model>
 
     <model name="green_can">
-      <pose>0.66 0.01 0.35 0 0 0</pose> <!--x范围0.66-0.78-->
+      <pose>0.71 -0.1 0.35 0 0 0</pose> <!--x范围0.66-0.78-->
       <link name="link">
         
         <inertial><mass>0.3</mass></inertial>

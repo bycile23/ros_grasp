@@ -120,9 +120,13 @@ class GraspingDemo(Node):
         self.get_logger().info(">>> 2. 垂直下降至计算抓取高度")
         if not self.move_vertical(grasp_z, duration=1.5): return
         
-        self.get_logger().info(">>> 3. 闭合夹爪执行抓取")
-        self.control_gripper(self.GRIPPER_CLOSE)  
-        time.sleep(2) # 等待物理引擎稳定
+        self.get_logger().info(">>> 3. 闭合夹爪执行抓取 (持续施加抓取力锁定目标)")
+        # 🌟 机关枪模式：在 2.5 秒内，每隔 0.1 秒发送一次闭合指令！
+        # 这样能逼迫 Gazebo 控制器持续输出力矩，把易拉罐死死包住，绝不松口！
+        for _ in range(6):
+            if self.stop_flag: return
+            self.control_gripper(self.GRIPPER_CLOSE)  
+            time.sleep(0.1)
         
         self.get_logger().info(">>> 4. 抓取成功，平稳垂直抬起")
         if not self.move_vertical(safe_z, duration=2.0): return
