@@ -27,6 +27,7 @@ install(PROGRAMS
   scripts/mimic_fixer.py
   scripts/scene_setup.py
   scripts/monitor.py
+  scripts/random_target.py
   DESTINATION lib/${PROJECT_NAME}
 )
       

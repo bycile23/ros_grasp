@@ -34,7 +34,7 @@
     </model>
 
     <model name="green_can">
-      <pose>0.65 0 0.35 0 0 0</pose>
+      <pose>0.66 0.01 0.35 0 0 0</pose> <!--x范围0.66-0.78-->
       <link name="link">
         
         <inertial><mass>0.3</mass></inertial>

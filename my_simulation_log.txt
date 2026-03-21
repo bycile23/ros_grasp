@@ -1,69 +1,72 @@
-[INFO] [launch]: All log files can be found below /home/baitiao/.ros/log/2026-03-08-20-51-42-221408-baitiao-virtual-machine-421270
+[INFO] [launch]: All log files can be found below /home/baitiao/.ros/log/2026-03-21-13-00-33-115739-baitiao-virtual-machine-542369
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [gzserver-1]: process started with pid [421286]
-[INFO] [gzclient-2]: process started with pid [421288]
-[INFO] [robot_state_publisher-3]: process started with pid [421290]
-[INFO] [spawn_entity.py-4]: process started with pid [421292]
-[INFO] [spawner-5]: process started with pid [421294]
-[INFO] [spawner-6]: process started with pid [421296]
-[INFO] [spawner-7]: process started with pid [421298]
-[INFO] [move_group-8]: process started with pid [421300]
-[INFO] [rviz2-9]: process started with pid [421303]
-[robot_state_publisher-3] [INFO] [1772974303.594069821] [robot_state_publisher]: got segment base_link
-[robot_state_publisher-3] [INFO] [1772974303.596216068] [robot_state_publisher]: got segment camera_link
-[robot_state_publisher-3] [INFO] [1772974303.597441838] [robot_state_publisher]: got segment gripper_base_link
-[robot_state_publisher-3] [INFO] [1772974303.597505237] [robot_state_publisher]: got segment left_finger_link
-[robot_state_publisher-3] [INFO] [1772974303.597530936] [robot_state_publisher]: got segment link1
-[robot_state_publisher-3] [INFO] [1772974303.597555635] [robot_state_publisher]: got segment link2
-[robot_state_publisher-3] [INFO] [1772974303.597580035] [robot_state_publisher]: got segment link3
-[robot_state_publisher-3] [INFO] [1772974303.597604334] [robot_state_publisher]: got segment link4
-[robot_state_publisher-3] [INFO] [1772974303.597628934] [robot_state_publisher]: got segment link5
-[robot_state_publisher-3] [INFO] [1772974303.597756431] [robot_state_publisher]: got segment link6
-[robot_state_publisher-3] [INFO] [1772974303.597781130] [robot_state_publisher]: got segment right_finger_link
-[robot_state_publisher-3] [INFO] [1772974303.597806129] [robot_state_publisher]: got segment tool0
-[robot_state_publisher-3] [INFO] [1772974303.597830629] [robot_state_publisher]: got segment world
-[move_group-8] [INFO] [1772974303.663110637] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0 seconds
-[move_group-8] [INFO] [1772974303.663208135] [moveit_robot_model.robot_model]: Loading robot model 'fr5'...
-[move_group-8] [INFO] [1772974303.898680695] [moveit_kinematics_base.kinematics_base]: number of joints: 6
-[spawner-6] [INFO] [1772974303.987289235] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
-[spawner-5] [INFO] [1772974304.038788379] [spawner_fr5_joint_trajectory_controller]: waiting for service /controller_manager/list_controllers to become available...
-[spawner-7] [INFO] [1772974304.183268058] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
-[move_group-8] [INFO] [1772974304.315770527] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
-[move_group-8] [INFO] [1772974304.318190068] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
-[move_group-8] [INFO] [1772974304.323079249] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
-[move_group-8] [INFO] [1772974304.326021978] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
-[move_group-8] [INFO] [1772974304.326346369] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
-[move_group-8] [INFO] [1772974304.327499642] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
-[move_group-8] [INFO] [1772974304.327522041] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
-[move_group-8] [INFO] [1772974304.328588615] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
-[move_group-8] [INFO] [1772974304.329740787] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
-[move_group-8] [WARN] [1772974304.332539319] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
-[move_group-8] [ERROR] [1772974304.332672915] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
-[move_group-8] [INFO] [1772974304.452265000] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
-[move_group-8] [INFO] [1772974304.468689500] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
-[move_group-8] [INFO] [1772974304.473636979] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
-[move_group-8] [INFO] [1772974304.473675478] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
-[move_group-8] [INFO] [1772974304.473691178] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
-[move_group-8] [INFO] [1772974304.473713177] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
-[move_group-8] [INFO] [1772974304.473733477] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
-[move_group-8] [INFO] [1772974304.473749076] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
-[move_group-8] [INFO] [1772974304.473767076] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
-[move_group-8] [INFO] [1772974304.473782575] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was not set. Using default value: 0.020000
-[move_group-8] [INFO] [1772974304.473797675] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
-[move_group-8] [INFO] [1772974304.473815175] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
-[move_group-8] [INFO] [1772974304.473830074] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
-[move_group-8] [INFO] [1772974304.473844474] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
-[move_group-8] [INFO] [1772974304.473858574] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
-[move_group-8] [INFO] [1772974304.473872773] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
-[move_group-8] [INFO] [1772974304.473886973] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
-[move_group-8] [INFO] [1772974304.547778471] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for fr5_joint_trajectory_controller
-[move_group-8] [INFO] [1772974304.547843170] [moveit.plugins.moveit_simple_controller_manager]: Max effort set to 0.0
-[move_group-8] [INFO] [1772974304.561709532] [moveit.plugins.moveit_simple_controller_manager]: Added GripperCommand controller for gripper_controller
-[move_group-8] [INFO] [1772974304.562952302] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
-[move_group-8] [INFO] [1772974304.562983801] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
-[move_group-8] [INFO] [1772974304.564975253] [moveit_ros.trajectory_execution_manager]: Trajectory execution is not managing controllers
-[move_group-8] [INFO] [1772974304.564999752] [move_group.move_group]: MoveGroup debug mode is ON
-[move_group-8] [INFO] [1772974304.669764198] [move_group.move_group]: 
+[INFO] [gzserver-1]: process started with pid [542385]
+[INFO] [gzclient-2]: process started with pid [542387]
+[INFO] [robot_state_publisher-3]: process started with pid [542389]
+[INFO] [spawn_entity.py-4]: process started with pid [542391]
+[INFO] [spawner-5]: process started with pid [542393]
+[INFO] [spawner-6]: process started with pid [542395]
+[INFO] [spawner-7]: process started with pid [542397]
+[INFO] [move_group-8]: process started with pid [542400]
+[INFO] [rviz2-9]: process started with pid [542402]
+[robot_state_publisher-3] [INFO] [1774069234.179219858] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1774069234.179364855] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1774069234.179393054] [robot_state_publisher]: got segment gripper_base_link
+[robot_state_publisher-3] [INFO] [1774069234.179418554] [robot_state_publisher]: got segment left_finger_link
+[robot_state_publisher-3] [INFO] [1774069234.179443453] [robot_state_publisher]: got segment link1
+[robot_state_publisher-3] [INFO] [1774069234.179468152] [robot_state_publisher]: got segment link2
+[robot_state_publisher-3] [INFO] [1774069234.179568450] [robot_state_publisher]: got segment link3
+[robot_state_publisher-3] [INFO] [1774069234.179596549] [robot_state_publisher]: got segment link4
+[robot_state_publisher-3] [INFO] [1774069234.179621349] [robot_state_publisher]: got segment link5
+[robot_state_publisher-3] [INFO] [1774069234.179645748] [robot_state_publisher]: got segment link6
+[robot_state_publisher-3] [INFO] [1774069234.179670248] [robot_state_publisher]: got segment right_finger_link
+[robot_state_publisher-3] [INFO] [1774069234.179694847] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-3] [INFO] [1774069234.179719546] [robot_state_publisher]: got segment world
+[move_group-8] [INFO] [1774069234.387162043] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0 seconds
+[move_group-8] [INFO] [1774069234.387273841] [moveit_robot_model.robot_model]: Loading robot model 'fr5'...
+[move_group-8] [INFO] [1774069234.814632422] [moveit_kinematics_base.kinematics_base]: number of joints: 6
+[spawner-5] [INFO] [1774069235.049987419] [spawner_fr5_joint_trajectory_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-6] [INFO] [1774069235.194999982] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[move_group-8] [INFO] [1774069235.271022076] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-8] [INFO] [1774069235.273387316] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-8] [INFO] [1774069235.280359142] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-8] [INFO] [1774069235.281738407] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-8] [INFO] [1774069235.281915403] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-8] [INFO] [1774069235.283026475] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-8] [INFO] [1774069235.283052374] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-8] [INFO] [1774069235.284352842] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-8] [INFO] [1774069235.284818630] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-8] [WARN] [1774069235.291966351] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-8] [ERROR] [1774069235.292003550] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-8] [INFO] [1774069235.377865396] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[move_group-8] [INFO] [1774069235.394053990] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-8] [INFO] [1774069235.402089589] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[move_group-8] [INFO] [1774069235.402141187] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[move_group-8] [INFO] [1774069235.402156687] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[move_group-8] [INFO] [1774069235.402178886] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-8] [INFO] [1774069235.402200186] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[move_group-8] [INFO] [1774069235.402215986] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-8] [INFO] [1774069235.402233285] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-8] [INFO] [1774069235.402248485] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was not set. Using default value: 0.020000
+[move_group-8] [INFO] [1774069235.402263884] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[move_group-8] [INFO] [1774069235.402281484] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-8] [INFO] [1774069235.402296183] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-8] [INFO] [1774069235.402310083] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-8] [INFO] [1774069235.402388181] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-8] [INFO] [1774069235.402406281] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-8] [INFO] [1774069235.402420280] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-8] [INFO] [1774069235.500175429] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for fr5_joint_trajectory_controller
+[move_group-8] [INFO] [1774069235.500230928] [moveit.plugins.moveit_simple_controller_manager]: Max effort set to 0.0
+[move_group-8] [INFO] [1774069235.610783455] [moveit.plugins.moveit_simple_controller_manager]: Added GripperCommand controller for gripper_controller
+[move_group-8] [INFO] [1774069235.611446038] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1774069235.611476038] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[spawner-7] [INFO] [1774069235.618555960] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[move_group-8] [INFO] [1774069235.633648781] [moveit_ros.trajectory_execution_manager]: Trajectory execution is not managing controllers
+[move_group-8] [INFO] [1774069235.635195543] [move_group.move_group]: MoveGroup debug mode is ON
+[spawn_entity.py-4] [INFO] [1774069235.707710924] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-4] [INFO] [1774069235.708507604] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-4] [INFO] [1774069235.714216061] [spawn_entity]: Waiting for entity xml on robot_description
+[move_group-8] [INFO] [1774069235.735374131] [move_group.move_group]: 
 [move_group-8] 
 [move_group-8] ********************************************************
 [move_group-8] * MoveGroup using: 
@@ -79,8 +82,8 @@
 [move_group-8] *     - StateValidationService
 [move_group-8] ********************************************************
 [move_group-8] 
-[move_group-8] [INFO] [1772974304.669821597] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
-[move_group-8] [INFO] [1772974304.669840596] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-8] [INFO] [1774069235.735438029] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-8] [INFO] [1774069235.735458029] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
 [move_group-8] [96mLoading 'move_group/ApplyPlanningSceneService'...
 [move_group-8] [0m[96mLoading 'move_group/ClearOctomapService'...
 [move_group-8] [0m[96mLoading 'move_group/MoveGroupCartesianPathService'...
@@ -94,921 +97,663 @@
 [move_group-8] [0m[92m
 [move_group-8] You can start planning now!
 [move_group-8] 
-[spawn_entity.py-4] [INFO] [1772974304.700021661] [spawn_entity]: Spawn Entity started
-[spawn_entity.py-4] [INFO] [1772974304.700822642] [spawn_entity]: Loading entity published on topic robot_description
-[spawn_entity.py-4] [INFO] [1772974304.705940117] [spawn_entity]: Waiting for entity xml on robot_description
-[spawn_entity.py-4] [INFO] [1772974304.719643283] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
-[spawn_entity.py-4] [INFO] [1772974304.720259267] [spawn_entity]: Waiting for service /spawn_entity
-[rviz2-9] [INFO] [1772974305.803876752] [rviz2]: Stereo is NOT SUPPORTED
-[rviz2-9] [INFO] [1772974305.804083147] [rviz2]: OpenGl version: 2.1 (GLSL 1.2)
-[rviz2-9] [INFO] [1772974305.873817347] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-9] [INFO] [1774069236.853889881] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-9] [INFO] [1774069236.854111375] [rviz2]: OpenGl version: 2.1 (GLSL 1.2)
+[rviz2-9] [INFO] [1774069236.948611006] [rviz2]: Stereo is NOT SUPPORTED
 [rviz2-9] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
 [rviz2-9]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
-[spawn_entity.py-4] [INFO] [1772974306.482133618] [spawn_entity]: Calling service /spawn_entity
-[spawn_entity.py-4] [INFO] [1772974306.872155811] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [fr5]
-[INFO] [spawn_entity.py-4]: process has finished cleanly [pid 421292]
-[gzserver-1] [INFO] [1772974307.255848158] [camera_controller]: Publishing camera info to [/narrow_stereo/camera_info]
-[gzserver-1] [INFO] [1772974307.370479964] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
-[gzserver-1] [INFO] [1772974307.412218047] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
-[gzserver-1] [INFO] [1772974307.412322444] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
-[gzserver-1] [INFO] [1772974307.435560678] [gazebo_ros2_control]: connected to service!! robot_state_publisher
-[gzserver-1] [INFO] [1772974307.442274214] [gazebo_ros2_control]: Received urdf from param server, parsing...
-[gzserver-1] [INFO] [1772974307.442372811] [gazebo_ros2_control]: Loading parameter files /home/baitiao/dev_ws_a/install/fr5/share/fr5/config/fr5_controllers.yaml
-[gzserver-1] [INFO] [1772974307.461754739] [gazebo_ros2_control]: Loading joint: joint1
-[gzserver-1] [INFO] [1772974307.462395423] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1772974307.462448322] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.462476621] [gazebo_ros2_control]: 			 found initial value: 0.000000
-[gzserver-1] [INFO] [1772974307.462506021] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1772974307.462588819] [gazebo_ros2_control]: 		 effort
-[gzserver-1] [INFO] [1772974307.462614318] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1772974307.462639118] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.462950410] [gazebo_ros2_control]: Loading joint: joint2
-[gzserver-1] [INFO] [1772974307.463088306] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1772974307.463116606] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.463142205] [gazebo_ros2_control]: 			 found initial value: 0.000000
-[gzserver-1] [INFO] [1772974307.463168805] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1772974307.463194004] [gazebo_ros2_control]: 		 effort
-[gzserver-1] [INFO] [1772974307.463218903] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1772974307.463243603] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.463449698] [gazebo_ros2_control]: Loading joint: joint3
-[gzserver-1] [INFO] [1772974307.463477297] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1772974307.463502496] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.463527596] [gazebo_ros2_control]: 			 found initial value: 0.000000
-[gzserver-1] [INFO] [1772974307.463553495] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1772974307.463578195] [gazebo_ros2_control]: 		 effort
-[gzserver-1] [INFO] [1772974307.463603494] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1772974307.463628593] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.463816689] [gazebo_ros2_control]: Loading joint: joint4
-[gzserver-1] [INFO] [1772974307.463843688] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1772974307.463868587] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.463893687] [gazebo_ros2_control]: 			 found initial value: 0.000000
-[gzserver-1] [INFO] [1772974307.463918986] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1772974307.463945185] [gazebo_ros2_control]: 		 effort
-[gzserver-1] [INFO] [1772974307.463975685] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1772974307.464060983] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.464239778] [gazebo_ros2_control]: Loading joint: joint5
-[gzserver-1] [INFO] [1772974307.464266278] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1772974307.464291177] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.464316477] [gazebo_ros2_control]: 			 found initial value: 0.000000
-[gzserver-1] [INFO] [1772974307.464342376] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1772974307.464366975] [gazebo_ros2_control]: 		 effort
-[gzserver-1] [INFO] [1772974307.464391675] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1772974307.464416274] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.464645668] [gazebo_ros2_control]: Loading joint: joint6
-[gzserver-1] [INFO] [1772974307.464676468] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1772974307.464701967] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.464726866] [gazebo_ros2_control]: 			 found initial value: 0.000000
-[gzserver-1] [INFO] [1772974307.464752566] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1772974307.464778965] [gazebo_ros2_control]: 		 effort
-[gzserver-1] [INFO] [1772974307.464803865] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1772974307.464828364] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.467815091] [gazebo_ros2_control]: Loading joint: left_finger_joint
-[gzserver-1] [INFO] [1772974307.467873490] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1772974307.467899589] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.467924589] [gazebo_ros2_control]: 			 found initial value: 0.000000
-[gzserver-1] [INFO] [1772974307.467951188] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1772974307.467975787] [gazebo_ros2_control]: 		 effort
-[gzserver-1] [INFO] [1772974307.468000387] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1772974307.468107584] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.469171958] [gazebo_ros2_control]: Loading joint: right_finger_joint
-[gzserver-1] [INFO] [1772974307.469347454] [gazebo_ros2_control]: 	State:
-[gzserver-1] [INFO] [1772974307.469375153] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.469400753] [gazebo_ros2_control]: 			 found initial value: 0.000000
-[gzserver-1] [INFO] [1772974307.469427052] [gazebo_ros2_control]: 		 velocity
-[gzserver-1] [INFO] [1772974307.469452152] [gazebo_ros2_control]: 		 effort
-[gzserver-1] [INFO] [1772974307.469476851] [gazebo_ros2_control]: 	Command:
-[gzserver-1] [INFO] [1772974307.469501450] [gazebo_ros2_control]: 		 position
-[gzserver-1] [INFO] [1772974307.469832142] [resource_manager]: Initialize hardware 'Fr5System' 
-[gzserver-1] [INFO] [1772974307.469939139] [resource_manager]: Successful initialization of hardware 'Fr5System'
-[gzserver-1] [INFO] [1772974307.470003838] [resource_manager]: 'configure' hardware 'Fr5System' 
-[gzserver-1] [INFO] [1772974307.470021837] [resource_manager]: Successful 'configure' of hardware 'Fr5System'
-[gzserver-1] [INFO] [1772974307.470039437] [resource_manager]: 'activate' hardware 'Fr5System' 
-[gzserver-1] [INFO] [1772974307.470055037] [resource_manager]: Successful 'activate' of hardware 'Fr5System'
-[gzserver-1] [INFO] [1772974307.470128235] [gazebo_ros2_control]: Loading controller_manager
-[gzserver-1] [INFO] [1772974307.639445007] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
-[gzserver-1] [INFO] [1772974307.660508794] [grasp]: Loading grasp-fix plugin
-[gzserver-1] [INFO] [1772974307.664153105] [grasp]: GazeboGraspFix: Using disable_collisions_on_attach 0
-[gzserver-1] [INFO] [1772974307.664412899] [grasp]: GazeboGraspFix: Using update rate 70
-[gzserver-1] [INFO] [1772974307.664439198] [grasp]: GazeboGraspFix: Using max_grip_count 3
-[gzserver-1] [INFO] [1772974307.664455898] [grasp]: GazeboGraspFix: Using grip_count_threshold 2
-[gzserver-1] [INFO] [1772974307.668513699] [grasp]: GazeboGraspFix: Using release_tolerance 0.005
-[gzserver-1] [INFO] [1772974307.669386078] [grasp]: GazeboGraspFix: Adding collision scoped name fr5::left_finger_link::left_finger_link_collision
-[gzserver-1] [INFO] [1772974307.669485075] [grasp]: GazeboGraspFix: Adding collision scoped name fr5::right_finger_link::right_finger_link_collision
-[gzserver-1] [INFO] [1772974307.669731669] [grasp]: Subscribing contact manager to topic ~/fr5/contacts
-[gzserver-1] [INFO] [1772974307.677827272] [grasp]: Advertising grasping events on topic grasp_events
-[gzserver-1] [INFO] [1772974307.679857122] [grasp]: grasp plugin is loaded
-[gzserver-1] [INFO] [1772974307.781184552] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawn_entity.py-4] [INFO] [1774069237.816241149] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-4] [INFO] [1774069237.816935832] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-4] [INFO] [1774069238.588353390] [spawn_entity]: Calling service /spawn_entity
+[spawn_entity.py-4] [INFO] [1774069238.861098152] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [fr5]
+[INFO] [spawn_entity.py-4]: process has finished cleanly [pid 542391]
+[INFO] [python3-10]: process started with pid [542619]
+[gzserver-1] [INFO] [1774069239.647104545] [camera_controller]: Publishing camera info to [/narrow_stereo/camera_info]
+[gzserver-1] [INFO] [1774069239.762788345] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-1] [INFO] [1774069239.792583198] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-1] [INFO] [1774069239.792682495] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-1] [INFO] [1774069239.831305727] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-1] [INFO] [1774069239.836293802] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-1] [INFO] [1774069239.837082182] [gazebo_ros2_control]: Loading parameter files /home/baitiao/dev_ws_a/install/fr5/share/fr5/config/fr5_controllers.yaml
+[gzserver-1] [INFO] [1774069239.895886208] [gazebo_ros2_control]: Loading joint: joint1
+[gzserver-1] [INFO] [1774069239.895955806] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1774069239.895984005] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.896013304] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1774069239.896046804] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1774069239.896073103] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1774069239.896098803] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1774069239.896125302] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.896852483] [gazebo_ros2_control]: Loading joint: joint2
+[gzserver-1] [INFO] [1774069239.896886583] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1774069239.896912982] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.896939181] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1774069239.896966780] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1774069239.896993080] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1774069239.897018579] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1774069239.897044279] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.897219274] [gazebo_ros2_control]: Loading joint: joint3
+[gzserver-1] [INFO] [1774069239.897352671] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1774069239.897378770] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.897404870] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1774069239.897431669] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1774069239.897457068] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1774069239.897483468] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1774069239.897509167] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.897690762] [gazebo_ros2_control]: Loading joint: joint4
+[gzserver-1] [INFO] [1774069239.897717962] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1774069239.897744161] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.897769861] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1774069239.897795560] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1774069239.897821559] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1774069239.897847059] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1774069239.897872758] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.898044854] [gazebo_ros2_control]: Loading joint: joint5
+[gzserver-1] [INFO] [1774069239.898071753] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1774069239.898097552] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.898123251] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1774069239.898149151] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1774069239.898175050] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1774069239.898200550] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1774069239.898232249] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.902033454] [gazebo_ros2_control]: Loading joint: joint6
+[gzserver-1] [INFO] [1774069239.902075252] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1774069239.902102752] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.902129551] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1774069239.902157150] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1774069239.902184750] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1774069239.902267948] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1774069239.902296047] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.902506742] [gazebo_ros2_control]: Loading joint: left_finger_joint
+[gzserver-1] [INFO] [1774069239.902560040] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1774069239.902586940] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.902612939] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1774069239.902639638] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1774069239.902665638] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1774069239.902691537] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1774069239.902717136] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.909966955] [gazebo_ros2_control]: Loading joint: right_finger_joint
+[gzserver-1] [INFO] [1774069239.910025754] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1774069239.910052853] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.910143350] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1774069239.910171750] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1774069239.910197949] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1774069239.910223848] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1774069239.910254848] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1774069239.910597339] [resource_manager]: Initialize hardware 'Fr5System' 
+[gzserver-1] [INFO] [1774069239.916965879] [resource_manager]: Successful initialization of hardware 'Fr5System'
+[gzserver-1] [INFO] [1774069239.917071677] [resource_manager]: 'configure' hardware 'Fr5System' 
+[gzserver-1] [INFO] [1774069239.918595438] [resource_manager]: Successful 'configure' of hardware 'Fr5System'
+[gzserver-1] [INFO] [1774069239.918620638] [resource_manager]: 'activate' hardware 'Fr5System' 
+[gzserver-1] [INFO] [1774069239.918637638] [resource_manager]: Successful 'activate' of hardware 'Fr5System'
+[gzserver-1] [INFO] [1774069239.918793333] [gazebo_ros2_control]: Loading controller_manager
+[rviz2-9] [ERROR] [1774069240.151725094] [moveit_ros_visualization.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-9] [INFO] [1774069240.202743215] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[gzserver-1] [INFO] [1774069240.379120794] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[rviz2-9] [INFO] [1774069240.394672104] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0 seconds
+[rviz2-9] [INFO] [1774069240.395119793] [moveit_robot_model.robot_model]: Loading robot model 'fr5'...
+[gzserver-1] [INFO] [1774069240.451830571] [grasp]: Loading grasp-fix plugin
+[gzserver-1] [INFO] [1774069240.454140513] [grasp]: GazeboGraspFix: Using disable_collisions_on_attach 0
+[gzserver-1] [INFO] [1774069240.454495505] [grasp]: GazeboGraspFix: Using update rate 70
+[gzserver-1] [INFO] [1774069240.454523704] [grasp]: GazeboGraspFix: Using max_grip_count 3
+[gzserver-1] [INFO] [1774069240.454541103] [grasp]: GazeboGraspFix: Using grip_count_threshold 2
+[gzserver-1] [INFO] [1774069240.454565603] [grasp]: GazeboGraspFix: Using release_tolerance 0.005
+[gzserver-1] [INFO] [1774069240.461950018] [controller_manager]: Loading controller 'fr5_joint_trajectory_controller'
+[gzserver-1] [INFO] [1774069240.465522428] [grasp]: GazeboGraspFix: Adding collision scoped name fr5::left_finger_link::left_finger_link_collision
+[gzserver-1] [INFO] [1774069240.468585251] [grasp]: GazeboGraspFix: Adding collision scoped name fr5::right_finger_link::right_finger_link_collision
+[gzserver-1] [INFO] [1774069240.471185886] [grasp]: Subscribing contact manager to topic ~/fr5/contacts
+[gzserver-1] [INFO] [1774069240.472130862] [grasp]: Advertising grasping events on topic grasp_events
+[gzserver-1] [INFO] [1774069240.485637024] [grasp]: grasp plugin is loaded
 [gzserver-1] [1;33m[Wrn] [Publisher.cc:135] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
-[gzserver-1] [0m[1;33m[0m[1;33m[0m[INFO] [1772974308.039125464] [controller_manager]: Loading controller 'gripper_controller'
-[spawner-6] [INFO] [1772974308.054059600] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
-[gzserver-1] [INFO] [1772974308.185787889] [controller_manager]: Loading controller 'fr5_joint_trajectory_controller'
-[spawner-7] [INFO] [1772974308.186773665] [spawner_gripper_controller]: [94mLoaded [1mgripper_controller[0m
-[INFO] [python3-10]: process started with pid [421521]
-[gzserver-1] [INFO] [1772974308.392692845] [controller_manager]: Configuring controller 'joint_state_broadcaster'
-[gzserver-1] [INFO] [1772974308.393474626] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
-[spawner-5] [INFO] [1772974308.406759902] [spawner_fr5_joint_trajectory_controller]: [94mLoaded [1mfr5_joint_trajectory_controller[0m
-[gzserver-1] [INFO] [1772974308.424369773] [controller_manager]: Configuring controller 'gripper_controller'
-[gzserver-1] [INFO] [1772974308.442304936] [gripper_controller]: configure successful
-[gzserver-1] [INFO] [1772974308.446387737] [controller_manager]: Configuring controller 'fr5_joint_trajectory_controller'
-[gzserver-1] [INFO] [1772974308.446625931] [fr5_joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
-[gzserver-1] [INFO] [1772974308.446673129] [fr5_joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
-[gzserver-1] [INFO] [1772974308.446721628] [fr5_joint_trajectory_controller]: Using 'splines' interpolation method.
-[gzserver-1] [INFO] [1772974308.468489598] [fr5_joint_trajectory_controller]: Controller state will be published at 50.00 Hz.
-[gzserver-1] [INFO] [1772974308.499979730] [fr5_joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
-[spawner-6] [INFO] [1772974308.579686187] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
-[gzserver-1] [INFO] [1772974308.581206550] [gripper_controller]: activate successful
-[spawner-7] [INFO] [1772974308.621894658] [spawner_gripper_controller]: [92mConfigured and activated [1mgripper_controller[0m
-[spawner-5] [INFO] [1772974308.637958967] [spawner_fr5_joint_trajectory_controller]: [92mConfigured and activated [1mfr5_joint_trajectory_controller[0m
-[INFO] [spawner-6]: process has finished cleanly [pid 421296]
-[INFO] [spawner-7]: process has finished cleanly [pid 421298]
-[INFO] [spawner-5]: process has finished cleanly [pid 421294]
-[rviz2-9] [ERROR] [1772974309.102419944] [moveit_ros_visualization.motion_planning_frame]: Action server: /recognize_objects not available
-[rviz2-9] [INFO] [1772974309.245017968] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
-[rviz2-9] [INFO] [1772974309.501700411] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0 seconds
-[rviz2-9] [INFO] [1772974309.501783409] [moveit_robot_model.robot_model]: Loading robot model 'fr5'...
-[rviz2-9] [INFO] [1772974309.729443860] [moveit_kinematics_base.kinematics_base]: number of joints: 6
-[rviz2-9] [INFO] [1772974310.498306017] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
-[rviz2-9] [INFO] [1772974310.507720187] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
-[rviz2-9] [INFO] [1772974310.760394528] [interactive_marker_display_103323589874608]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
-[rviz2-9] [INFO] [1772974310.772138941] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
-[rviz2-9] [INFO] [1772974310.773324513] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
-[rviz2-9] [INFO] [1772974310.825386143] [interactive_marker_display_103323589874608]: Sending request for interactive markers
-[rviz2-9] [INFO] [1772974310.857409563] [interactive_marker_display_103323589874608]: Service response received for initialization
-[rviz2-9] [INFO] [1772974310.870053154] [moveit_ros_visualization.motion_planning_frame]: group gripper
-[rviz2-9] [INFO] [1772974310.870156152] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
-[rviz2-9] [INFO] [1772974310.920249731] [move_group_interface]: Ready to take commands for planning group gripper.
-[rviz2-9] [INFO] [1772974310.923405354] [moveit_ros_visualization.motion_planning_frame]: group gripper
-[python3-10] [INFO] [1772974312.092051366] [scene_setup_node]: 🟢 [场景] 黑色底座(真实高度) 已发布 (X=0.8)
-[python3-10] [INFO] [1772974312.598568818] [scene_setup_node]: 🟢 [场景] 绿色圆柱 已发布 (X=0.65)
-[INFO] [python3-10]: process has finished cleanly [pid 421521]
-[move_group-8] [INFO] [1772974325.699334950] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
-[move_group-8] [INFO] [1772974325.701787090] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tool0' using a step of 0.010000 m and jump threshold 0.000000 (in global reference frame)
-[move_group-8] [WARN] [1772974326.421449247] [moveit_trajectory_processing.time_optimal_trajectory_generation]: Joint acceleration limits are not defined. Using the default 1 rad/s^2. You can define acceleration limits in the URDF or joint_limits.yaml.
-[move_group-8] [INFO] [1772974326.422166929] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 15 points (followed 100.000000% of requested trajectory)
-[move_group-8] [INFO] [1772974329.712299320] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
-[move_group-8] [INFO] [1772974329.712400718] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tool0' using a step of 0.010000 m and jump threshold 0.000000 (in global reference frame)
-[move_group-8] [INFO] [1772974330.946704628] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 25 points (followed 100.000000% of requested trajectory)
-[gzserver-1] [INFO] [1772974332.773141303] [grasp]: Angular distance is 3.02623 while the min is 1.48353
-[gzserver-1] [INFO] [1772974332.773199902] [grasp]: Ratio is 0.0806587 while the min is 0.3
-[gzserver-1] [INFO] [1772974332.819944462] [grasp]: Angular distance is 2.65829 while the min is 1.48353
-[gzserver-1] [INFO] [1772974332.819990161] [grasp]: Ratio is 0.00924918 while the min is 0.3
-[gzserver-1] [INFO] [1772974332.835479384] [grasp]: Angular distance is 0.616925 while the min is 1.48353
-[gzserver-1] [INFO] [1772974332.850793410] [grasp]: Angular distance is 2.86438 while the min is 1.48353
-[gzserver-1] [INFO] [1772974332.850836609] [grasp]: Ratio is 0.515919 while the min is 0.3
-[gzserver-1] [INFO] [1772974332.851380596] [grasp]: Grasp Held: green_can::link::collision grip count: 0
-[gzserver-1] [INFO] [1772974332.869697949] [grasp]: Angular distance is 2.68626 while the min is 1.48353
-[gzserver-1] [INFO] [1772974332.869744548] [grasp]: Ratio is 0.58769 while the min is 0.3
-[gzserver-1] [INFO] [1772974332.869762948] [grasp]: Grasp Held: green_can::link::collision grip count: 1
-[gzserver-1] [INFO] [1772974332.884340992] [grasp]: Angular distance is 2.21116 while the min is 1.48353
-[gzserver-1] [INFO] [1772974332.884377692] [grasp]: Ratio is 0.444753 while the min is 0.3
-[gzserver-1] [INFO] [1772974332.884396891] [grasp]: Grasp Held: green_can::link::collision grip count: 2
-[gzserver-1] [INFO] [1772974332.884413691] [grasp]: GRIPPING green_can::link::collision, grip count 3 (threshold 2)
-[gzserver-1] [INFO] [1772974332.884680184] [grasp]: GazeboGraspFix: Attaching green_can::link::collision to gripper fr5_arm.
-[gzserver-1] [INFO] [1772974332.907820520] [grasp]: Angular distance is 2.62492 while the min is 1.48353
-[gzserver-1] [INFO] [1772974332.907865819] [grasp]: Ratio is 0.0989878 while the min is 0.3
-[gzserver-1] [INFO] [1772974332.982925289] [grasp]: Angular distance is 0.4241 while the min is 1.48353
-[gzserver-1] [INFO] [1772974333.032831073] [grasp]: Angular distance is 0.813126 while the min is 1.48353
-[gzserver-1] [INFO] [1772974333.050960731] [grasp]: Angular distance is 0.541005 while the min is 1.48353
-[move_group-8] [INFO] [1772974334.720112041] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
-[move_group-8] [INFO] [1772974334.720250037] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tool0' using a step of 0.010000 m and jump threshold 0.000000 (in global reference frame)
-[move_group-8] [INFO] [1772974336.519528277] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 36 points (followed 100.000000% of requested trajectory)
-[gzserver-1] [INFO] [1772974336.712965762] [grasp]: Angular distance is 0.258209 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.727590205] [grasp]: Angular distance is 0.258536 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.742554240] [grasp]: Angular distance is 0.249836 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.765063892] [grasp]: Angular distance is 0.246406 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.781922881] [grasp]: Angular distance is 0.246203 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.796770419] [grasp]: Angular distance is 0.247619 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.811204367] [grasp]: Angular distance is 0.248176 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.826210301] [grasp]: Angular distance is 0.241058 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.840862044] [grasp]: Angular distance is 0.242861 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.855264893] [grasp]: Angular distance is 0.244111 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.871153806] [grasp]: Angular distance is 0.244512 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.885967245] [grasp]: Angular distance is 0.244578 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.900618188] [grasp]: Angular distance is 0.244479 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.915301430] [grasp]: Angular distance is 0.244292 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.930502659] [grasp]: Angular distance is 0.24406 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.944960207] [grasp]: Angular distance is 0.243805 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.959688747] [grasp]: Angular distance is 0.243581 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.974155995] [grasp]: Angular distance is 0.243399 while the min is 1.48353
-[gzserver-1] [INFO] [1772974336.991353776] [grasp]: Angular distance is 0.243204 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.008266763] [grasp]: Angular distance is 0.243013 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.025144252] [grasp]: Angular distance is 0.242856 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.041357757] [grasp]: Angular distance is 0.242653 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.055890003] [grasp]: Angular distance is 0.242415 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.070270552] [grasp]: Angular distance is 0.242205 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.087532031] [grasp]: Angular distance is 0.241984 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.101921980] [grasp]: Angular distance is 0.241735 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.119411854] [grasp]: Angular distance is 0.241482 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.134651682] [grasp]: Angular distance is 0.24126 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.151312776] [grasp]: Angular distance is 0.241059 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.166194114] [grasp]: Angular distance is 0.240849 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.182389519] [grasp]: Angular distance is 0.240648 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.197228857] [grasp]: Angular distance is 0.240484 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.211622906] [grasp]: Angular distance is 0.24032 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.226213850] [grasp]: Angular distance is 0.240175 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.240876193] [grasp]: Angular distance is 0.240047 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.256605109] [grasp]: Angular distance is 0.239881 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.272354425] [grasp]: Angular distance is 0.239678 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.287005168] [grasp]: Angular distance is 0.239474 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.301850207] [grasp]: Angular distance is 0.239278 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.316621347] [grasp]: Angular distance is 0.239051 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.331080194] [grasp]: Angular distance is 0.238833 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.347520594] [grasp]: Angular distance is 0.238642 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.362641325] [grasp]: Angular distance is 0.238442 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.377575261] [grasp]: Angular distance is 0.238199 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.392637693] [grasp]: Angular distance is 0.237955 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.407564730] [grasp]: Angular distance is 0.237718 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.424396419] [grasp]: Angular distance is 0.237457 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.439228458] [grasp]: Angular distance is 0.237219 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.453892001] [grasp]: Angular distance is 0.236965 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.471738465] [grasp]: Angular distance is 0.236718 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.489635829] [grasp]: Angular distance is 0.236554 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.504345271] [grasp]: Angular distance is 0.236388 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.518915315] [grasp]: Angular distance is 0.236177 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.533511660] [grasp]: Angular distance is 0.235957 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.548494394] [grasp]: Angular distance is 0.235744 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.564765298] [grasp]: Angular distance is 0.235592 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.580622811] [grasp]: Angular distance is 0.23554 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.595341352] [grasp]: Angular distance is 0.235517 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.610697778] [grasp]: Angular distance is 0.23548 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.626015905] [grasp]: Angular distance is 0.235529 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.640744245] [grasp]: Angular distance is 0.235584 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.657212944] [grasp]: Angular distance is 0.235621 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.672258977] [grasp]: Angular distance is 0.235811 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.688304986] [grasp]: Angular distance is 0.236067 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.703144025] [grasp]: Angular distance is 0.236317 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.720626898] [grasp]: Angular distance is 0.236572 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.736436113] [grasp]: Angular distance is 0.23722 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.752145030] [grasp]: Angular distance is 0.237897 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.766561778] [grasp]: Angular distance is 0.238829 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.781110823] [grasp]: Angular distance is 0.239819 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.795968061] [grasp]: Angular distance is 0.240573 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.811194890] [grasp]: Angular distance is 0.241483 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.826131426] [grasp]: Angular distance is 0.242738 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.841885342] [grasp]: Angular distance is 0.24426 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.857481962] [grasp]: Angular distance is 0.245706 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.873151380] [grasp]: Angular distance is 0.246875 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.888916095] [grasp]: Angular distance is 0.247516 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.904584414] [grasp]: Angular distance is 0.247763 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.922210584] [grasp]: Angular distance is 0.24793 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.940109148] [grasp]: Angular distance is 0.248006 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.956909838] [grasp]: Angular distance is 0.247748 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.972545357] [grasp]: Angular distance is 0.247319 while the min is 1.48353
-[gzserver-1] [INFO] [1772974337.990515019] [grasp]: Angular distance is 0.246801 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.004930068] [grasp]: Angular distance is 0.246228 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.020097198] [grasp]: Angular distance is 0.246235 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.037434575] [grasp]: Angular distance is 0.246908 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.052105117] [grasp]: Angular distance is 0.248082 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.070289174] [grasp]: Angular distance is 0.249229 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.086770372] [grasp]: Angular distance is 0.250459 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.101292618] [grasp]: Angular distance is 0.251947 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.116531947] [grasp]: Angular distance is 0.252909 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.132914048] [grasp]: Angular distance is 0.253458 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.147352296] [grasp]: Angular distance is 0.253638 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.164888668] [grasp]: Angular distance is 0.254272 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.179906202] [grasp]: Angular distance is 0.255059 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.194663342] [grasp]: Angular distance is 0.25581 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.210532455] [grasp]: Angular distance is 0.256196 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.227987030] [grasp]: Angular distance is 0.256242 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.243401454] [grasp]: Angular distance is 0.256098 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.258300491] [grasp]: Angular distance is 0.255952 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.273221727] [grasp]: Angular distance is 0.255226 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.287715674] [grasp]: Angular distance is 0.254026 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.303246495] [grasp]: Angular distance is 0.253919 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.318137433] [grasp]: Angular distance is 0.253897 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.333122167] [grasp]: Angular distance is 0.253382 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.348775686] [grasp]: Angular distance is 0.2533 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.364209809] [grasp]: Angular distance is 0.253812 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.380450813] [grasp]: Angular distance is 0.254403 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.395856438] [grasp]: Angular distance is 0.254635 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.413064819] [grasp]: Angular distance is 0.25467 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.429033830] [grasp]: Angular distance is 0.254686 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.444655949] [grasp]: Angular distance is 0.254511 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.459156895] [grasp]: Angular distance is 0.256455 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.473560444] [grasp]: Angular distance is 0.258136 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.488113189] [grasp]: Angular distance is 0.258141 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.504442091] [grasp]: Angular distance is 0.258122 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.520318204] [grasp]: Angular distance is 0.258122 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.536134119] [grasp]: Angular distance is 0.258141 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.552539819] [grasp]: Angular distance is 0.258142 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.568170537] [grasp]: Angular distance is 0.258153 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.583322868] [grasp]: Angular distance is 0.258167 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.598519398] [grasp]: Angular distance is 0.258182 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.614433010] [grasp]: Angular distance is 0.258202 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.631346097] [grasp]: Angular distance is 0.258223 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.647098613] [grasp]: Angular distance is 0.258247 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.662995526] [grasp]: Angular distance is 0.258251 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.679381126] [grasp]: Angular distance is 0.258287 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.694353061] [grasp]: Angular distance is 0.258322 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.708937006] [grasp]: Angular distance is 0.258342 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.724005338] [grasp]: Angular distance is 0.258389 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.739423863] [grasp]: Angular distance is 0.258439 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.754342199] [grasp]: Angular distance is 0.25849 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.769467830] [grasp]: Angular distance is 0.258551 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.783932178] [grasp]: Angular distance is 0.258624 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.799136907] [grasp]: Angular distance is 0.258803 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.816066194] [grasp]: Angular distance is 0.258941 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.832845286] [grasp]: Angular distance is 0.259 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.848302309] [grasp]: Angular distance is 0.258959 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.865331894] [grasp]: Angular distance is 0.2588 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.880225431] [grasp]: Angular distance is 0.258601 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.895719053] [grasp]: Angular distance is 0.258392 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.910478393] [grasp]: Angular distance is 0.258186 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.925406729] [grasp]: Angular distance is 0.257969 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.939986674] [grasp]: Angular distance is 0.257768 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.954513320] [grasp]: Angular distance is 0.257533 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.971414708] [grasp]: Angular distance is 0.25727 while the min is 1.48353
-[gzserver-1] [INFO] [1772974338.986100850] [grasp]: Angular distance is 0.257034 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.003045837] [grasp]: Angular distance is 0.2568 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.018415862] [grasp]: Angular distance is 0.256563 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.035377249] [grasp]: Angular distance is 0.256426 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.050295685] [grasp]: Angular distance is 0.256246 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.068694237] [grasp]: Angular distance is 0.256017 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.083674372] [grasp]: Angular distance is 0.255813 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.099657882] [grasp]: Angular distance is 0.255678 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.114785113] [grasp]: Angular distance is 0.255505 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.130588228] [grasp]: Angular distance is 0.255304 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.146150449] [grasp]: Angular distance is 0.25507 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.161456676] [grasp]: Angular distance is 0.25482 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.178889451] [grasp]: Angular distance is 0.254602 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.193519494] [grasp]: Angular distance is 0.254389 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.209330009] [grasp]: Angular distance is 0.254152 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.224440740] [grasp]: Angular distance is 0.253938 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.239595671] [grasp]: Angular distance is 0.25376 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.255866674] [grasp]: Angular distance is 0.253549 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.270505417] [grasp]: Angular distance is 0.253319 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.287118312] [grasp]: Angular distance is 0.253139 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.302992426] [grasp]: Angular distance is 0.252973 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.319638119] [grasp]: Angular distance is 0.252806 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.336762702] [grasp]: Angular distance is 0.252627 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.351508743] [grasp]: Angular distance is 0.252444 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.366549476] [grasp]: Angular distance is 0.25227 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.381483112] [grasp]: Angular distance is 0.252086 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.396098556] [grasp]: Angular distance is 0.251919 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.411609778] [grasp]: Angular distance is 0.251713 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.426298320] [grasp]: Angular distance is 0.251491 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.443175109] [grasp]: Angular distance is 0.251293 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.458430237] [grasp]: Angular distance is 0.251122 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.473201676] [grasp]: Angular distance is 0.250972 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.491271936] [grasp]: Angular distance is 0.250832 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.508805008] [grasp]: Angular distance is 0.25068 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.525494602] [grasp]: Angular distance is 0.250583 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.540584434] [grasp]: Angular distance is 0.250423 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.555407273] [grasp]: Angular distance is 0.25028 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.572386658] [grasp]: Angular distance is 0.250106 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.588022978] [grasp]: Angular distance is 0.249917 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.607295908] [grasp]: Angular distance is 0.249733 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.625295369] [grasp]: Angular distance is 0.249615 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.640834290] [grasp]: Angular distance is 0.249466 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.656861700] [grasp]: Angular distance is 0.249307 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.673814086] [grasp]: Angular distance is 0.249167 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.689615501] [grasp]: Angular distance is 0.249013 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.705222221] [grasp]: Angular distance is 0.248866 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.721893114] [grasp]: Angular distance is 0.24868 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.745866529] [grasp]: Angular distance is 0.248528 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.761216355] [grasp]: Angular distance is 0.248377 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.775943496] [grasp]: Angular distance is 0.248154 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.791783810] [grasp]: Angular distance is 0.248057 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.808352207] [grasp]: Angular distance is 0.247879 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.823655833] [grasp]: Angular distance is 0.247671 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.838843763] [grasp]: Angular distance is 0.247508 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.853552505] [grasp]: Angular distance is 0.247377 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.869022828] [grasp]: Angular distance is 0.247206 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.884349754] [grasp]: Angular distance is 0.247047 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.898923498] [grasp]: Angular distance is 0.246873 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.917061156] [grasp]: Angular distance is 0.246701 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.932577178] [grasp]: Angular distance is 0.246565 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.947304619] [grasp]: Angular distance is 0.246458 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.962338753] [grasp]: Angular distance is 0.24635 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.977618880] [grasp]: Angular distance is 0.246294 while the min is 1.48353
-[gzserver-1] [INFO] [1772974339.993542692] [grasp]: Angular distance is 0.246189 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.008695623] [grasp]: Angular distance is 0.246101 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.025139622] [grasp]: Angular distance is 0.246002 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.039686667] [grasp]: Angular distance is 0.245886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.055481282] [grasp]: Angular distance is 0.245802 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.071745886] [grasp]: Angular distance is 0.245698 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.086445827] [grasp]: Angular distance is 0.245582 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.102123645] [grasp]: Angular distance is 0.245481 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.116577593] [grasp]: Angular distance is 0.245403 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.131983218] [grasp]: Angular distance is 0.245318 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.146659160] [grasp]: Angular distance is 0.245255 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.162235980] [grasp]: Angular distance is 0.245146 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.177281313] [grasp]: Angular distance is 0.245059 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.192151351] [grasp]: Angular distance is 0.244946 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.206747295] [grasp]: Angular distance is 0.244844 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.222756605] [grasp]: Angular distance is 0.244741 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.237888136] [grasp]: Angular distance is 0.244626 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.253256861] [grasp]: Angular distance is 0.244559 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.270807633] [grasp]: Angular distance is 0.244456 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.285967464] [grasp]: Angular distance is 0.244376 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.300400012] [grasp]: Angular distance is 0.244266 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.315467845] [grasp]: Angular distance is 0.244187 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.330578376] [grasp]: Angular distance is 0.244073 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.346226795] [grasp]: Angular distance is 0.243917 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.362213205] [grasp]: Angular distance is 0.243775 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.379536683] [grasp]: Angular distance is 0.243653 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.395239500] [grasp]: Angular distance is 0.243496 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.410795721] [grasp]: Angular distance is 0.243413 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.426101848] [grasp]: Angular distance is 0.243384 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.444057910] [grasp]: Angular distance is 0.243274 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.458679254] [grasp]: Angular distance is 0.243208 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.475257150] [grasp]: Angular distance is 0.243147 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.493482605] [grasp]: Angular distance is 0.243098 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.513801410] [grasp]: Angular distance is 0.242958 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.538237314] [grasp]: Angular distance is 0.242851 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.554174726] [grasp]: Angular distance is 0.242759 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.568837168] [grasp]: Angular distance is 0.242741 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.585076873] [grasp]: Angular distance is 0.2426 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.601219279] [grasp]: Angular distance is 0.24251 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.615705526] [grasp]: Angular distance is 0.242404 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.632806909] [grasp]: Angular distance is 0.242319 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.649247508] [grasp]: Angular distance is 0.242158 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.663943850] [grasp]: Angular distance is 0.242046 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.679108980] [grasp]: Angular distance is 0.241865 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.696166764] [grasp]: Angular distance is 0.241617 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.710549613] [grasp]: Angular distance is 0.241388 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.728623573] [grasp]: Angular distance is 0.241243 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.743100120] [grasp]: Angular distance is 0.24106 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.759237326] [grasp]: Angular distance is 0.240946 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.773781872] [grasp]: Angular distance is 0.240781 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.788209121] [grasp]: Angular distance is 0.240645 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.804689219] [grasp]: Angular distance is 0.240517 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.819648454] [grasp]: Angular distance is 0.240369 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.840178154] [grasp]: Angular distance is 0.240287 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.861735928] [grasp]: Angular distance is 0.240223 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.876274374] [grasp]: Angular distance is 0.240143 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.891530202] [grasp]: Angular distance is 0.240029 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.906299642] [grasp]: Angular distance is 0.239894 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.922497847] [grasp]: Angular distance is 0.239751 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.937380884] [grasp]: Angular distance is 0.23962 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.953048902] [grasp]: Angular distance is 0.239487 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.969118510] [grasp]: Angular distance is 0.239335 while the min is 1.48353
-[gzserver-1] [INFO] [1772974340.984521134] [grasp]: Angular distance is 0.239162 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.000656941] [grasp]: Angular distance is 0.238948 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.016017567] [grasp]: Angular distance is 0.238761 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.030716009] [grasp]: Angular distance is 0.238621 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.046419526] [grasp]: Angular distance is 0.238481 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.061012070] [grasp]: Angular distance is 0.238341 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.076409395] [grasp]: Angular distance is 0.238194 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.092134311] [grasp]: Angular distance is 0.23804 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.107443238] [grasp]: Angular distance is 0.237866 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.125993786] [grasp]: Angular distance is 0.237679 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.140954821] [grasp]: Angular distance is 0.237532 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.157488818] [grasp]: Angular distance is 0.237398 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.171978765] [grasp]: Angular distance is 0.237256 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.188230669] [grasp]: Angular distance is 0.237113 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.202766714] [grasp]: Angular distance is 0.236955 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.219428508] [grasp]: Angular distance is 0.236796 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.234347145] [grasp]: Angular distance is 0.236617 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.249991063] [grasp]: Angular distance is 0.23643 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.266176968] [grasp]: Angular distance is 0.236271 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.282049482] [grasp]: Angular distance is 0.236125 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.297053416] [grasp]: Angular distance is 0.235973 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.312163847] [grasp]: Angular distance is 0.235827 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.328008261] [grasp]: Angular distance is 0.235681 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.343382786] [grasp]: Angular distance is 0.235535 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.358291823] [grasp]: Angular distance is 0.235369 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.373225659] [grasp]: Angular distance is 0.23516 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.388333791] [grasp]: Angular distance is 0.235 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.403987109] [grasp]: Angular distance is 0.234871 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.419808423] [grasp]: Angular distance is 0.234706 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.435684436] [grasp]: Angular distance is 0.234525 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.451800343] [grasp]: Angular distance is 0.234337 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.466925375] [grasp]: Angular distance is 0.234163 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.481566318] [grasp]: Angular distance is 0.234004 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.496070664] [grasp]: Angular distance is 0.233783 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.510535112] [grasp]: Angular distance is 0.233522 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.525968636] [grasp]: Angular distance is 0.233296 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.543587506] [grasp]: Angular distance is 0.233124 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.561003881] [grasp]: Angular distance is 0.233014 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.585995572] [grasp]: Angular distance is 0.232911 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.609109309] [grasp]: Angular distance is 0.232817 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.630325792] [grasp]: Angular distance is 0.23273 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.646130706] [grasp]: Angular distance is 0.232667 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.680179076] [grasp]: Angular distance is 0.232612 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.697492154] [grasp]: Angular distance is 0.232525 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.713961352] [grasp]: Angular distance is 0.23239 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.729039085] [grasp]: Angular distance is 0.232224 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.750201369] [grasp]: Angular distance is 0.232042 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.768459524] [grasp]: Angular distance is 0.231899 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.796017653] [grasp]: Angular distance is 0.231827 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.812999438] [grasp]: Angular distance is 0.231764 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.831833980] [grasp]: Angular distance is 0.231716 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.853681447] [grasp]: Angular distance is 0.231684 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.873372467] [grasp]: Angular distance is 0.231637 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.896798696] [grasp]: Angular distance is 0.231573 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.911339141] [grasp]: Angular distance is 0.231493 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.929641495] [grasp]: Angular distance is 0.231406 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.948638432] [grasp]: Angular distance is 0.231326 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.963608667] [grasp]: Angular distance is 0.23123 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.978137613] [grasp]: Angular distance is 0.231143 while the min is 1.48353
-[gzserver-1] [INFO] [1772974341.993858430] [grasp]: Angular distance is 0.231087 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.009116558] [grasp]: Angular distance is 0.230999 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.027376113] [grasp]: Angular distance is 0.230855 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.046509146] [grasp]: Angular distance is 0.230703 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.060926895] [grasp]: Angular distance is 0.230543 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.076109325] [grasp]: Angular distance is 0.230327 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.091105359] [grasp]: Angular distance is 0.230047 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.105699004] [grasp]: Angular distance is 0.229742 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.120992731] [grasp]: Angular distance is 0.229477 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.135617174] [grasp]: Angular distance is 0.229235 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.150898301] [grasp]: Angular distance is 0.229016 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.165834837] [grasp]: Angular distance is 0.228868 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.180543679] [grasp]: Angular distance is 0.22872 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.195915904] [grasp]: Angular distance is 0.22858 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.210906239] [grasp]: Angular distance is 0.228348 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.225397186] [grasp]: Angular distance is 0.227878 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.241391096] [grasp]: Angular distance is 0.227302 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.257383106] [grasp]: Angular distance is 0.227017 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.271895352] [grasp]: Angular distance is 0.226907 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.288249854] [grasp]: Angular distance is 0.226743 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.302687102] [grasp]: Angular distance is 0.226582 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.317563439] [grasp]: Angular distance is 0.226525 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.332895865] [grasp]: Angular distance is 0.226459 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.349726655] [grasp]: Angular distance is 0.226377 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.365258276] [grasp]: Angular distance is 0.226312 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.382732751] [grasp]: Angular distance is 0.226239 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.398173274] [grasp]: Angular distance is 0.2261 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.414158085] [grasp]: Angular distance is 0.225905 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.429023522] [grasp]: Angular distance is 0.22572 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.443923659] [grasp]: Angular distance is 0.225508 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.458377306] [grasp]: Angular distance is 0.225284 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.474211920] [grasp]: Angular distance is 0.225135 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.489356651] [grasp]: Angular distance is 0.224939 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.508674280] [grasp]: Angular distance is 0.224678 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.523457920] [grasp]: Angular distance is 0.224447 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.539193736] [grasp]: Angular distance is 0.224216 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.555027250] [grasp]: Angular distance is 0.223949 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.573097510] [grasp]: Angular distance is 0.223757 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.592108246] [grasp]: Angular distance is 0.223638 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.607835163] [grasp]: Angular distance is 0.223528 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.627054295] [grasp]: Angular distance is 0.223422 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.641490243] [grasp]: Angular distance is 0.223336 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.656416579] [grasp]: Angular distance is 0.223268 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.671076921] [grasp]: Angular distance is 0.223219 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.685980858] [grasp]: Angular distance is 0.223164 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.704283212] [grasp]: Angular distance is 0.223012 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.734030387] [grasp]: Angular distance is 0.222822 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.765005632] [grasp]: Angular distance is 0.222629 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.780305659] [grasp]: Angular distance is 0.222275 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.794975001] [grasp]: Angular distance is 0.221968 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.810097033] [grasp]: Angular distance is 0.221832 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.826123642] [grasp]: Angular distance is 0.221724 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.840536291] [grasp]: Angular distance is 0.221656 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.855643223] [grasp]: Angular distance is 0.221542 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.871108945] [grasp]: Angular distance is 0.221406 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.889858688] [grasp]: Angular distance is 0.22126 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.906500783] [grasp]: Angular distance is 0.221109 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.922078303] [grasp]: Angular distance is 0.221028 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.940449355] [grasp]: Angular distance is 0.220961 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.960179074] [grasp]: Angular distance is 0.22088 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.975513200] [grasp]: Angular distance is 0.220778 while the min is 1.48353
-[gzserver-1] [INFO] [1772974342.990670831] [grasp]: Angular distance is 0.220676 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.007303125] [grasp]: Angular distance is 0.220567 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.026400660] [grasp]: Angular distance is 0.220458 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.043792036] [grasp]: Angular distance is 0.220372 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.058603675] [grasp]: Angular distance is 0.2203 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.074248793] [grasp]: Angular distance is 0.22025 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.089860413] [grasp]: Angular distance is 0.220207 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.108011270] [grasp]: Angular distance is 0.220143 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.125762938] [grasp]: Angular distance is 0.220058 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.140379181] [grasp]: Angular distance is 0.219966 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.154955626] [grasp]: Angular distance is 0.219819 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.170221554] [grasp]: Angular distance is 0.219568 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.184815698] [grasp]: Angular distance is 0.219342 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.200403418] [grasp]: Angular distance is 0.219199 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.216031937] [grasp]: Angular distance is 0.219055 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.231892850] [grasp]: Angular distance is 0.217794 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.246275300] [grasp]: Angular distance is 0.216759 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.260998741] [grasp]: Angular distance is 0.216609 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.276259769] [grasp]: Angular distance is 0.21644 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.290916512] [grasp]: Angular distance is 0.216279 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.306307037] [grasp]: Angular distance is 0.216128 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.322676337] [grasp]: Angular distance is 0.215991 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.337117285] [grasp]: Angular distance is 0.215868 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.351782728] [grasp]: Angular distance is 0.215757 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.368131929] [grasp]: Angular distance is 0.215629 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.382600677] [grasp]: Angular distance is 0.215466 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.397615910] [grasp]: Angular distance is 0.215334 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.412829140] [grasp]: Angular distance is 0.215239 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.428137666] [grasp]: Angular distance is 0.215138 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.442962205] [grasp]: Angular distance is 0.215037 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.458290231] [grasp]: Angular distance is 0.214926 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.474304341] [grasp]: Angular distance is 0.214827 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.491147430] [grasp]: Angular distance is 0.214711 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.506379859] [grasp]: Angular distance is 0.214561 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.522486966] [grasp]: Angular distance is 0.214379 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.540126336] [grasp]: Angular distance is 0.21421 while the min is 1.48353
-[move_group-8] [INFO] [1772974343.541031214] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
-[move_group-8] [INFO] [1772974343.541122712] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tool0' using a step of 0.010000 m and jump threshold 0.000000 (in global reference frame)
-[gzserver-1] [INFO] [1772974343.557262919] [grasp]: Angular distance is 0.214109 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.573210730] [grasp]: Angular distance is 0.214021 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.591996872] [grasp]: Angular distance is 0.213905 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.610053432] [grasp]: Angular distance is 0.213762 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.626562829] [grasp]: Angular distance is 0.213621 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.647753613] [grasp]: Angular distance is 0.213492 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.668552206] [grasp]: Angular distance is 0.213257 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.688627517] [grasp]: Angular distance is 0.213028 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.708453633] [grasp]: Angular distance is 0.212826 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.723745861] [grasp]: Angular distance is 0.212663 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.740535052] [grasp]: Angular distance is 0.212547 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.758588412] [grasp]: Angular distance is 0.212441 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.773240654] [grasp]: Angular distance is 0.212356 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.791791002] [grasp]: Angular distance is 0.212286 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.806450644] [grasp]: Angular distance is 0.212225 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.821488978] [grasp]: Angular distance is 0.212149 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.836636409] [grasp]: Angular distance is 0.212042 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.852062333] [grasp]: Angular distance is 0.211952 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.867599554] [grasp]: Angular distance is 0.211873 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.884713837] [grasp]: Angular distance is 0.211795 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.902209410] [grasp]: Angular distance is 0.211721 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.918964202] [grasp]: Angular distance is 0.21165 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.933874039] [grasp]: Angular distance is 0.211576 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.951638805] [grasp]: Angular distance is 0.211506 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.968422296] [grasp]: Angular distance is 0.211454 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.983197136] [grasp]: Angular distance is 0.211377 while the min is 1.48353
-[gzserver-1] [INFO] [1772974343.997594285] [grasp]: Angular distance is 0.21128 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.013708693] [grasp]: Angular distance is 0.211191 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.030450684] [grasp]: Angular distance is 0.211129 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.045280423] [grasp]: Angular distance is 0.211077 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.061368031] [grasp]: Angular distance is 0.211016 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.075805279] [grasp]: Angular distance is 0.210962 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.092527871] [grasp]: Angular distance is 0.210917 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.108109691] [grasp]: Angular distance is 0.210863 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.123472917] [grasp]: Angular distance is 0.210789 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.137888366] [grasp]: Angular distance is 0.210722 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.155846428] [grasp]: Angular distance is 0.210662 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.170715065] [grasp]: Angular distance is 0.210605 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.186555679] [grasp]: Angular distance is 0.210545 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.202387093] [grasp]: Angular distance is 0.210465 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.216932139] [grasp]: Angular distance is 0.210406 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.231491484] [grasp]: Angular distance is 0.210346 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.246342321] [grasp]: Angular distance is 0.210271 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.262512027] [grasp]: Angular distance is 0.210199 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.277637359] [grasp]: Angular distance is 0.210105 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.292710091] [grasp]: Angular distance is 0.210027 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.310345562] [grasp]: Angular distance is 0.209969 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.325410594] [grasp]: Angular distance is 0.209892 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.341719397] [grasp]: Angular distance is 0.209825 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.357694207] [grasp]: Angular distance is 0.209771 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.372871838] [grasp]: Angular distance is 0.209707 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.391243890] [grasp]: Angular distance is 0.209628 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.405922832] [grasp]: Angular distance is 0.209546 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.425060965] [grasp]: Angular distance is 0.209455 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.440099699] [grasp]: Angular distance is 0.209371 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.454882438] [grasp]: Angular distance is 0.209315 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.469307187] [grasp]: Angular distance is 0.20926 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.485044503] [grasp]: Angular distance is 0.209192 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.505782997] [grasp]: Angular distance is 0.209134 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.523510965] [grasp]: Angular distance is 0.209078 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.539177283] [grasp]: Angular distance is 0.209005 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.554029821] [grasp]: Angular distance is 0.208942 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.572429573] [grasp]: Angular distance is 0.208887 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.588914371] [grasp]: Angular distance is 0.208821 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.605515266] [grasp]: Angular distance is 0.208752 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.620440602] [grasp]: Angular distance is 0.208677 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.634972448] [grasp]: Angular distance is 0.208597 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.651376148] [grasp]: Angular distance is 0.208538 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.666239186] [grasp]: Angular distance is 0.208493 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.681674309] [grasp]: Angular distance is 0.208435 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.700147459] [grasp]: Angular distance is 0.208376 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.715483685] [grasp]: Angular distance is 0.208332 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.732684566] [grasp]: Angular distance is 0.208283 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.748993568] [grasp]: Angular distance is 0.208242 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.765381569] [grasp]: Angular distance is 0.208184 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.780839292] [grasp]: Angular distance is 0.208107 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.795663530] [grasp]: Angular distance is 0.208055 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.810942858] [grasp]: Angular distance is 0.208009 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.827853346] [grasp]: Angular distance is 0.207957 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.847532066] [grasp]: Angular distance is 0.207903 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.863405279] [grasp]: Angular distance is 0.207858 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.880375366] [grasp]: Angular distance is 0.207801 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.895224304] [grasp]: Angular distance is 0.207732 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.910187039] [grasp]: Angular distance is 0.207666 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.925878657] [grasp]: Angular distance is 0.207594 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.945252284] [grasp]: Angular distance is 0.207529 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.959636934] [grasp]: Angular distance is 0.207467 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.976936212] [grasp]: Angular distance is 0.207405 while the min is 1.48353
-[gzserver-1] [INFO] [1772974344.992880323] [grasp]: Angular distance is 0.20735 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.009964507] [grasp]: Angular distance is 0.207313 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.025089038] [grasp]: Angular distance is 0.207276 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.039592085] [grasp]: Angular distance is 0.207231 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.054094931] [grasp]: Angular distance is 0.207185 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.075735904] [grasp]: Angular distance is 0.207133 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.091025331] [grasp]: Angular distance is 0.20707 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.105610675] [grasp]: Angular distance is 0.207007 while the min is 1.48353
-[move_group-8] [INFO] [1772974345.110585954] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 30 points (followed 100.000000% of requested trajectory)
-[gzserver-1] [INFO] [1772974345.120628909] [grasp]: Angular distance is 0.206932 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.135550046] [grasp]: Angular distance is 0.206855 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.152814225] [grasp]: Angular distance is 0.206784 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.167338771] [grasp]: Angular distance is 0.206719 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.183573975] [grasp]: Angular distance is 0.206627 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.200198970] [grasp]: Angular distance is 0.206405 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.215804989] [grasp]: Angular distance is 0.206243 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.231520906] [grasp]: Angular distance is 0.206143 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.246346545] [grasp]: Angular distance is 0.206073 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.264126911] [grasp]: Angular distance is 0.206 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.280715707] [grasp]: Angular distance is 0.205929 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.296090732] [grasp]: Angular distance is 0.205867 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.311423159] [grasp]: Angular distance is 0.205846 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.326022403] [grasp]: Angular distance is 0.205909 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.341509025] [grasp]: Angular distance is 0.205902 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.358195218] [grasp]: Angular distance is 0.205863 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.372718564] [grasp]: Angular distance is 0.205801 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.389035966] [grasp]: Angular distance is 0.205733 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.405286870] [grasp]: Angular distance is 0.205666 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.419811616] [grasp]: Angular distance is 0.205594 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.434406760] [grasp]: Angular distance is 0.205526 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.449455694] [grasp]: Angular distance is 0.205415 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.463993339] [grasp]: Angular distance is 0.205249 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.478712580] [grasp]: Angular distance is 0.205083 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.495576569] [grasp]: Angular distance is 0.204932 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.510010017] [grasp]: Angular distance is 0.204804 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.525850331] [grasp]: Angular distance is 0.204667 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.540930964] [grasp]: Angular distance is 0.204532 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.557794953] [grasp]: Angular distance is 0.204417 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.572729589] [grasp]: Angular distance is 0.204314 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.588480805] [grasp]: Angular distance is 0.20418 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.603372042] [grasp]: Angular distance is 0.204054 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.617819289] [grasp]: Angular distance is 0.203933 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.632296637] [grasp]: Angular distance is 0.203825 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.648911332] [grasp]: Angular distance is 0.203703 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.663962565] [grasp]: Angular distance is 0.20358 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.678645307] [grasp]: Angular distance is 0.203464 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.693136754] [grasp]: Angular distance is 0.203348 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.708604877] [grasp]: Angular distance is 0.20324 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.724010101] [grasp]: Angular distance is 0.203114 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.739494323] [grasp]: Angular distance is 0.202945 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.755108743] [grasp]: Angular distance is 0.202803 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.771107753] [grasp]: Angular distance is 0.202691 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.786456379] [grasp]: Angular distance is 0.202577 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.801961401] [grasp]: Angular distance is 0.202458 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.818305903] [grasp]: Angular distance is 0.202312 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.833901022] [grasp]: Angular distance is 0.202149 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.849154250] [grasp]: Angular distance is 0.202012 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.863562499] [grasp]: Angular distance is 0.201879 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.878948324] [grasp]: Angular distance is 0.20174 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.894246251] [grasp]: Angular distance is 0.20159 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.910680551] [grasp]: Angular distance is 0.201437 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.925792182] [grasp]: Angular distance is 0.201315 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.940215031] [grasp]: Angular distance is 0.201198 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.955199765] [grasp]: Angular distance is 0.201083 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.970680088] [grasp]: Angular distance is 0.200966 while the min is 1.48353
-[gzserver-1] [INFO] [1772974345.985614424] [grasp]: Angular distance is 0.200811 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.001708132] [grasp]: Angular distance is 0.200655 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.017882338] [grasp]: Angular distance is 0.200523 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.033357260] [grasp]: Angular distance is 0.200904 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.049841558] [grasp]: Angular distance is 0.201237 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.067086638] [grasp]: Angular distance is 0.201079 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.083778731] [grasp]: Angular distance is 0.200929 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.098949361] [grasp]: Angular distance is 0.200774 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.115502258] [grasp]: Angular distance is 0.20062 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.131472169] [grasp]: Angular distance is 0.200442 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.147144086] [grasp]: Angular distance is 0.200267 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.163098297] [grasp]: Angular distance is 0.200093 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.177922236] [grasp]: Angular distance is 0.199929 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.192782074] [grasp]: Angular distance is 0.199763 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.207480415] [grasp]: Angular distance is 0.199609 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.222348653] [grasp]: Angular distance is 0.199476 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.236841400] [grasp]: Angular distance is 0.199318 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.251825935] [grasp]: Angular distance is 0.19915 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.266445378] [grasp]: Angular distance is 0.198981 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.282652083] [grasp]: Angular distance is 0.19878 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.297108731] [grasp]: Angular distance is 0.198623 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.312993243] [grasp]: Angular distance is 0.198592 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.329061752] [grasp]: Angular distance is 0.198563 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.345323555] [grasp]: Angular distance is 0.19853 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.360489385] [grasp]: Angular distance is 0.198504 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.376066506] [grasp]: Angular distance is 0.198485 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.390832046] [grasp]: Angular distance is 0.198453 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.405584986] [grasp]: Angular distance is 0.198414 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.420598220] [grasp]: Angular distance is 0.198381 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.435139066] [grasp]: Angular distance is 0.198349 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.451632464] [grasp]: Angular distance is 0.198313 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.466058112] [grasp]: Angular distance is 0.198271 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.481667632] [grasp]: Angular distance is 0.198234 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.497392448] [grasp]: Angular distance is 0.198151 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.513327960] [grasp]: Angular distance is 0.197708 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.529437067] [grasp]: Angular distance is 0.196271 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.544587498] [grasp]: Angular distance is 0.194577 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.562174369] [grasp]: Angular distance is 0.193874 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.578061082] [grasp]: Angular distance is 0.193383 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.596015044] [grasp]: Angular distance is 0.192959 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.620772541] [grasp]: Angular distance is 0.192595 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.635204989] [grasp]: Angular distance is 0.192279 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.651346796] [grasp]: Angular distance is 0.192127 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.671167912] [grasp]: Angular distance is 0.192095 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.686630436] [grasp]: Angular distance is 0.19214 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.701158882] [grasp]: Angular distance is 0.192231 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.718047070] [grasp]: Angular distance is 0.1922 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.736095330] [grasp]: Angular distance is 0.192037 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.750874670] [grasp]: Angular distance is 0.191753 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.765536413] [grasp]: Angular distance is 0.191228 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.780095458] [grasp]: Angular distance is 0.190598 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.795139391] [grasp]: Angular distance is 0.189863 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.814901309] [grasp]: Angular distance is 0.188957 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.829442855] [grasp]: Angular distance is 0.187817 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.845046974] [grasp]: Angular distance is 0.186497 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.859786215] [grasp]: Angular distance is 0.186781 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.875391835] [grasp]: Angular distance is 0.185857 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.889900181] [grasp]: Angular distance is 0.184518 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.905324605] [grasp]: Angular distance is 0.18376 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.920384138] [grasp]: Angular distance is 0.183333 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.936281651] [grasp]: Angular distance is 0.183063 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.954465107] [grasp]: Angular distance is 0.182894 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.969101451] [grasp]: Angular distance is 0.182801 while the min is 1.48353
-[gzserver-1] [INFO] [1772974346.984637572] [grasp]: Angular distance is 0.182732 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.001482761] [grasp]: Angular distance is 0.182681 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.016346699] [grasp]: Angular distance is 0.182611 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.030865945] [grasp]: Angular distance is 0.182496 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.048296720] [grasp]: Angular distance is 0.182393 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.065690096] [grasp]: Angular distance is 0.182297 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.083599060] [grasp]: Angular distance is 0.182204 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.101968612] [grasp]: Angular distance is 0.18214 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.116642254] [grasp]: Angular distance is 0.182078 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.131723886] [grasp]: Angular distance is 0.182008 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.147145710] [grasp]: Angular distance is 0.181946 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.163092321] [grasp]: Angular distance is 0.181903 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.178710141] [grasp]: Angular distance is 0.181898 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.197656879] [grasp]: Angular distance is 0.181896 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.214140977] [grasp]: Angular distance is 0.181898 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.231278359] [grasp]: Angular distance is 0.181898 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.247419266] [grasp]: Angular distance is 0.181898 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.262420400] [grasp]: Angular distance is 0.181897 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.277021544] [grasp]: Angular distance is 0.181896 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.291941280] [grasp]: Angular distance is 0.181895 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.307215508] [grasp]: Angular distance is 0.181892 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.324104796] [grasp]: Angular distance is 0.181889 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.342381851] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.356848998] [grasp]: Angular distance is 0.181885 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.376074229] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.390474578] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.405096822] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.419502171] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.434407407] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.449561138] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.466695820] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.482654831] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.499150429] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.516168914] [grasp]: Angular distance is 0.181886 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.532191823] [grasp]: Angular distance is 0.181887 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.548238232] [grasp]: Angular distance is 0.181887 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.566569085] [grasp]: Angular distance is 0.18189 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.581472922] [grasp]: Angular distance is 0.181892 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.597865022] [grasp]: Angular distance is 0.181895 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.613863232] [grasp]: Angular distance is 0.181898 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.629419653] [grasp]: Angular distance is 0.181902 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.644634282] [grasp]: Angular distance is 0.181905 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.661020883] [grasp]: Angular distance is 0.181908 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.676753799] [grasp]: Angular distance is 0.181912 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.691677935] [grasp]: Angular distance is 0.181916 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.706654471] [grasp]: Angular distance is 0.181922 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.723895850] [grasp]: Angular distance is 0.181927 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.738772488] [grasp]: Angular distance is 0.181934 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.753726723] [grasp]: Angular distance is 0.181941 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.770110423] [grasp]: Angular distance is 0.181947 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.786377627] [grasp]: Angular distance is 0.181954 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.801248964] [grasp]: Angular distance is 0.181961 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.815637514] [grasp]: Angular distance is 0.181968 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.832826395] [grasp]: Angular distance is 0.181973 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.847395439] [grasp]: Angular distance is 0.181982 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.862410574] [grasp]: Angular distance is 0.181994 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.877219113] [grasp]: Angular distance is 0.182006 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.892272446] [grasp]: Angular distance is 0.182017 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.908394153] [grasp]: Angular distance is 0.182027 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.924533759] [grasp]: Angular distance is 0.182036 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.939445395] [grasp]: Angular distance is 0.182044 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.954798421] [grasp]: Angular distance is 0.182052 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.969634160] [grasp]: Angular distance is 0.182062 while the min is 1.48353
-[gzserver-1] [INFO] [1772974347.984218104] [grasp]: Angular distance is 0.182073 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.003484734] [grasp]: Angular distance is 0.182087 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.018849960] [grasp]: Angular distance is 0.182099 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.035756848] [grasp]: Angular distance is 0.18211 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.050334193] [grasp]: Angular distance is 0.182122 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.066952188] [grasp]: Angular distance is 0.182133 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.082770502] [grasp]: Angular distance is 0.182143 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.099732589] [grasp]: Angular distance is 0.182151 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.114563227] [grasp]: Angular distance is 0.18216 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.129341467] [grasp]: Angular distance is 0.182168 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.145257979] [grasp]: Angular distance is 0.182177 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.160422609] [grasp]: Angular distance is 0.182188 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.176420419] [grasp]: Angular distance is 0.182198 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.191011763] [grasp]: Angular distance is 0.182208 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.205883101] [grasp]: Angular distance is 0.182218 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.220468946] [grasp]: Angular distance is 0.182228 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.235025191] [grasp]: Angular distance is 0.182238 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.250379216] [grasp]: Angular distance is 0.18225 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.267668595] [grasp]: Angular distance is 0.182262 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.282866024] [grasp]: Angular distance is 0.182275 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.298133752] [grasp]: Angular distance is 0.182287 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.313924467] [grasp]: Angular distance is 0.182295 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.329111397] [grasp]: Angular distance is 0.182304 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.346867765] [grasp]: Angular distance is 0.182314 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.362650279] [grasp]: Angular distance is 0.182324 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.379680764] [grasp]: Angular distance is 0.182333 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.395972568] [grasp]: Angular distance is 0.182344 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.411310393] [grasp]: Angular distance is 0.182351 while the min is 1.48353
-[gzserver-1] [INFO] [1772974348.411367992] [grasp]: GazeboGraspFix: Detaching green_can::link::collision from gripper fr5_arm.
-[move_group-8] [INFO] [1772974349.402975819] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
-[move_group-8] [INFO] [1772974349.403134016] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tool0' using a step of 0.010000 m and jump threshold 0.000000 (in global reference frame)
-[move_group-8] [INFO] [1772974351.099761857] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 34 points (followed 100.000000% of requested trajectory)
+[gzserver-1] [0m[1;33m[0m[1;33m[0m[INFO] [1774069240.909631894] [controller_manager]: Loading controller 'gripper_controller'
+[spawner-5] [INFO] [1774069240.915590845] [spawner_fr5_joint_trajectory_controller]: [94mLoaded [1mfr5_joint_trajectory_controller[0m
+[gzserver-1] [INFO] [1774069241.038981351] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gzserver-1] [INFO] [1774069241.109452485] [controller_manager]: Configuring controller 'fr5_joint_trajectory_controller'
+[gzserver-1] [INFO] [1774069241.110184167] [fr5_joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gzserver-1] [INFO] [1774069241.110233566] [fr5_joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gzserver-1] [INFO] [1774069241.110384562] [fr5_joint_trajectory_controller]: Using 'splines' interpolation method.
+[gzserver-1] [INFO] [1774069241.116707403] [fr5_joint_trajectory_controller]: Controller state will be published at 50.00 Hz.
+[spawner-7] [INFO] [1774069241.111791426] [spawner_gripper_controller]: [94mLoaded [1mgripper_controller[0m
+[spawner-6] [INFO] [1774069241.129717777] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-1] [INFO] [1774069241.135237639] [fr5_joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[rviz2-9] [INFO] [1774069241.205538276] [moveit_kinematics_base.kinematics_base]: number of joints: 6
+[gzserver-1] [INFO] [1774069241.252301004] [controller_manager]: Configuring controller 'gripper_controller'
+[gzserver-1] [INFO] [1774069241.272797591] [gripper_controller]: configure successful
+[gzserver-1] [INFO] [1774069241.280370201] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-1] [INFO] [1774069241.280552596] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-5] [INFO] [1774069241.349071579] [spawner_fr5_joint_trajectory_controller]: [92mConfigured and activated [1mfr5_joint_trajectory_controller[0m
+[gzserver-1] [INFO] [1774069241.434386940] [gripper_controller]: activate successful
+[spawner-7] [INFO] [1774069241.493667955] [spawner_gripper_controller]: [92mConfigured and activated [1mgripper_controller[0m
+[spawner-6] [INFO] [1774069241.535656202] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [spawner-5]: process has finished cleanly [pid 542393]
+[INFO] [spawner-7]: process has finished cleanly [pid 542397]
+[INFO] [spawner-6]: process has finished cleanly [pid 542395]
+[python3-10] [INFO] [1774069242.269803700] [scene_setup_node]: 🟢 [场景] 黑色底座(真实高度) 已发布 (X=0.8)
+[rviz2-9] [INFO] [1774069242.279096967] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-9] [INFO] [1774069242.305494305] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-9] [INFO] [1774069242.762527451] [interactive_marker_display_103302354425296]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-9] [INFO] [1774069242.782843242] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[python3-10] [INFO] [1774069242.787912114] [scene_setup_node]: 🟢 [场景] 绿色圆柱 已发布 (X=0.65)
+[rviz2-9] [INFO] [1774069242.788624096] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-9] [INFO] [1774069242.822734742] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-9] [INFO] [1774069242.822808740] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
+[rviz2-9] [INFO] [1774069242.847678216] [interactive_marker_display_103302354425296]: Sending request for interactive markers
+[rviz2-9] [INFO] [1774069242.882767636] [interactive_marker_display_103302354425296]: Service response received for initialization
+[rviz2-9] [INFO] [1774069242.896075303] [move_group_interface]: Ready to take commands for planning group gripper.
+[rviz2-9] [INFO] [1774069242.922019053] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[INFO] [python3-10]: process has finished cleanly [pid 542619]
+[move_group-8] [INFO] [1774069263.269279014] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-8] [INFO] [1774069263.278462984] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tool0' using a step of 0.010000 m and jump threshold 0.000000 (in global reference frame)
+[move_group-8] [WARN] [1774069264.077781484] [moveit_trajectory_processing.time_optimal_trajectory_generation]: Joint acceleration limits are not defined. Using the default 1 rad/s^2. You can define acceleration limits in the URDF or joint_limits.yaml.
+[move_group-8] [INFO] [1774069264.080871707] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 16 points (followed 100.000000% of requested trajectory)
+[move_group-8] [INFO] [1774069267.333088546] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-8] [INFO] [1774069267.333187244] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tool0' using a step of 0.010000 m and jump threshold 0.000000 (in global reference frame)
+[move_group-8] [INFO] [1774069268.561354624] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 25 points (followed 100.000000% of requested trajectory)
+[gzserver-1] [INFO] [1774069270.366885767] [grasp]: Angular distance is 3.05912 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.366943566] [grasp]: Ratio is 0.380165 while the min is 0.3
+[gzserver-1] [INFO] [1774069270.367026463] [grasp]: Grasp Held: green_can::link::collision grip count: 0
+[gzserver-1] [INFO] [1774069270.382810369] [grasp]: Angular distance is 2.92996 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.382862168] [grasp]: Ratio is 0.838241 while the min is 0.3
+[gzserver-1] [INFO] [1774069270.382881367] [grasp]: Grasp Held: green_can::link::collision grip count: 1
+[gzserver-1] [INFO] [1774069270.399358056] [grasp]: Angular distance is 2.01523 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.399405954] [grasp]: Ratio is 0.46666 while the min is 0.3
+[gzserver-1] [INFO] [1774069270.399429554] [grasp]: Grasp Held: green_can::link::collision grip count: 2
+[gzserver-1] [INFO] [1774069270.399446053] [grasp]: GRIPPING green_can::link::collision, grip count 3 (threshold 2)
+[gzserver-1] [INFO] [1774069270.399668648] [grasp]: GazeboGraspFix: Attaching green_can::link::collision to gripper fr5_arm.
+[gzserver-1] [INFO] [1774069270.419225758] [grasp]: Angular distance is 0.772297 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.436333131] [grasp]: Angular distance is 0.601244 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.453619498] [grasp]: Angular distance is 0.465333 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.469045212] [grasp]: Angular distance is 0.372861 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.485580599] [grasp]: Angular distance is 0.354637 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.500340430] [grasp]: Angular distance is 0.404215 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.516390728] [grasp]: Angular distance is 0.421576 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.531295556] [grasp]: Angular distance is 0.396513 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.546386878] [grasp]: Angular distance is 0.427702 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.560992313] [grasp]: Angular distance is 0.439707 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.575524549] [grasp]: Angular distance is 0.471112 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.591723244] [grasp]: Angular distance is 0.482515 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.607113160] [grasp]: Angular distance is 0.489931 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.622114084] [grasp]: Angular distance is 0.505297 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.639929238] [grasp]: Angular distance is 0.500532 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.654416576] [grasp]: Angular distance is 0.457851 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.669543298] [grasp]: Angular distance is 0.508338 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.686298079] [grasp]: Angular distance is 0.503606 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.701997686] [grasp]: Angular distance is 0.525588 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.717963887] [grasp]: Angular distance is 0.592642 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.752009035] [grasp]: Angular distance is 0.701876 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.787025560] [grasp]: Angular distance is 0.672582 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.801625595] [grasp]: Angular distance is 0.523808 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.923008660] [grasp]: Angular distance is 0.779046 while the min is 1.48353
+[gzserver-1] [INFO] [1774069270.940563421] [grasp]: Angular distance is 0.622436 while the min is 1.48353
+[gzserver-1] [INFO] [1774069271.010606769] [grasp]: Angular distance is 0.723796 while the min is 1.48353
+[gzserver-1] [INFO] [1774069271.025574195] [grasp]: Angular distance is 0.777404 while the min is 1.48353
+[gzserver-1] [INFO] [1774069271.314277176] [grasp]: Angular distance is 0.235537 while the min is 1.48353
+[gzserver-1] [INFO] [1774069271.560160327] [grasp]: Angular distance is 0.389081 while the min is 1.48353
+[gzserver-1] [INFO] [1774069271.750282574] [grasp]: Angular distance is 1.26564 while the min is 1.48353
+[gzserver-1] [INFO] [1774069271.765367897] [grasp]: Angular distance is 0.689733 while the min is 1.48353
+[gzserver-1] [INFO] [1774069271.780494019] [grasp]: Angular distance is 0.52237 while the min is 1.48353
+[gzserver-1] [INFO] [1774069272.266033378] [grasp]: Angular distance is 1.68186 while the min is 1.48353
+[gzserver-1] [INFO] [1774069272.266084376] [grasp]: Ratio is 0.0489406 while the min is 0.3
+[gzserver-1] [INFO] [1774069272.297750384] [grasp]: Angular distance is 0.244654 while the min is 1.48353
+[gzserver-1] [INFO] [1774069272.312489516] [grasp]: Angular distance is 0.282348 while the min is 1.48353
+[move_group-8] [INFO] [1774069272.330536965] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Received request to compute Cartesian path
+[move_group-8] [INFO] [1774069272.330745459] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Attempting to follow 1 waypoints for link 'tool0' using a step of 0.010000 m and jump threshold 0.000000 (in global reference frame)
+[gzserver-1] [INFO] [1774069272.342526365] [grasp]: Angular distance is 1.6952 while the min is 1.48353
+[gzserver-1] [INFO] [1774069272.342576464] [grasp]: Ratio is 3.07245e-05 while the min is 0.3
+[gzserver-1] [INFO] [1774069272.557835181] [grasp]: Angular distance is 0.576965 while the min is 1.48353
+[gzserver-1] [INFO] [1774069272.578409067] [grasp]: Angular distance is 0.474513 while the min is 1.48353
+[gzserver-1] [INFO] [1774069272.784991102] [grasp]: Angular distance is 0.321009 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.396720109] [grasp]: Angular distance is 2.29613 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.396774507] [grasp]: Ratio is 0.0471547 while the min is 0.3
+[gzserver-1] [INFO] [1774069273.414267270] [grasp]: Angular distance is 1.50928 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.414318669] [grasp]: Ratio is 0.00271209 while the min is 0.3
+[gzserver-1] [INFO] [1774069273.461442290] [grasp]: Angular distance is 0.343744 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.638211170] [grasp]: Angular distance is 0.247924 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.726040374] [grasp]: Angular distance is 1.95677 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.726100973] [grasp]: Ratio is 0.0751858 while the min is 0.3
+[gzserver-1] [INFO] [1774069273.744140422] [grasp]: Angular distance is 1.52683 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.744240219] [grasp]: Ratio is 0.190406 while the min is 0.3
+[gzserver-1] [INFO] [1774069273.761664684] [grasp]: Angular distance is 1.39655 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.850421164] [grasp]: Angular distance is 0.558653 while the min is 1.48353
+[gzserver-1] [INFO] [1774069273.864960801] [grasp]: Angular distance is 0.408172 while the min is 1.48353
+[move_group-8] [INFO] [1774069274.201148396] [moveit_move_group_default_capabilities.cartersian_path_service_capability]: Computed Cartesian path with 36 points (followed 100.000000% of requested trajectory)
+[gzserver-1] [INFO] [1774069274.451164644] [grasp]: Angular distance is 0.367634 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.467161345] [grasp]: Angular distance is 0.449392 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.482583359] [grasp]: Angular distance is 0.405343 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.498553060] [grasp]: Angular distance is 0.421537 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.514089071] [grasp]: Angular distance is 0.404196 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.530665357] [grasp]: Angular distance is 0.421422 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.548251317] [grasp]: Angular distance is 0.399597 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.565702781] [grasp]: Angular distance is 0.405136 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.584116221] [grasp]: Angular distance is 0.393961 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.600200419] [grasp]: Angular distance is 0.401444 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.615775729] [grasp]: Angular distance is 0.411771 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.630546960] [grasp]: Angular distance is 0.393884 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.646675157] [grasp]: Angular distance is 0.373643 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.661800879] [grasp]: Angular distance is 0.38579 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.679420538] [grasp]: Angular distance is 0.406932 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.694039573] [grasp]: Angular distance is 0.398459 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.709061297] [grasp]: Angular distance is 0.375178 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.723622133] [grasp]: Angular distance is 0.440574 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.738980750] [grasp]: Angular distance is 0.42968 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.754993649] [grasp]: Angular distance is 0.430528 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.769484687] [grasp]: Angular distance is 0.362762 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.784665208] [grasp]: Angular distance is 0.417661 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.803617234] [grasp]: Angular distance is 0.368667 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.818511861] [grasp]: Angular distance is 0.346297 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.832945501] [grasp]: Angular distance is 0.334225 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.852140020] [grasp]: Angular distance is 0.358321 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.867867927] [grasp]: Angular distance is 0.316622 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.882656557] [grasp]: Angular distance is 0.329848 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.897505886] [grasp]: Angular distance is 0.314541 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.913991874] [grasp]: Angular distance is 0.333959 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.929627983] [grasp]: Angular distance is 0.311831 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.945757880] [grasp]: Angular distance is 0.310753 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.963773230] [grasp]: Angular distance is 0.313558 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.978373765] [grasp]: Angular distance is 0.302518 while the min is 1.48353
+[gzserver-1] [INFO] [1774069274.994496261] [grasp]: Angular distance is 0.286483 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.009505286] [grasp]: Angular distance is 0.30884 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.023938325] [grasp]: Angular distance is 0.2724 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.045535786] [grasp]: Angular distance is 0.306111 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.060802304] [grasp]: Angular distance is 0.291789 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.078479362] [grasp]: Angular distance is 0.271819 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.093700182] [grasp]: Angular distance is 0.27996 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.108607409] [grasp]: Angular distance is 0.272616 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.124664007] [grasp]: Angular distance is 0.273994 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.144987199] [grasp]: Angular distance is 0.264332 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.161374890] [grasp]: Angular distance is 0.263424 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.180913502] [grasp]: Angular distance is 0.379551 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.195934426] [grasp]: Angular distance is 0.26023 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.212430613] [grasp]: Angular distance is 0.260698 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.230111671] [grasp]: Angular distance is 0.268371 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.247341841] [grasp]: Angular distance is 0.253553 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.266712756] [grasp]: Angular distance is 0.276534 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.285940276] [grasp]: Angular distance is 0.265343 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.302796554] [grasp]: Angular distance is 0.247703 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.318041973] [grasp]: Angular distance is 0.258342 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.334066373] [grasp]: Angular distance is 0.242929 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.349847478] [grasp]: Angular distance is 0.244547 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.364483212] [grasp]: Angular distance is 0.232243 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.379828329] [grasp]: Angular distance is 0.227831 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.394868353] [grasp]: Angular distance is 0.215874 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.409713582] [grasp]: Angular distance is 0.208141 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.424241119] [grasp]: Angular distance is 0.204645 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.439523137] [grasp]: Angular distance is 0.202226 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.457518486] [grasp]: Angular distance is 0.199731 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.472925801] [grasp]: Angular distance is 0.201416 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.489428889] [grasp]: Angular distance is 0.196969 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.506400565] [grasp]: Angular distance is 0.196417 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.521883578] [grasp]: Angular distance is 0.19603 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.539125647] [grasp]: Angular distance is 0.19971 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.553716482] [grasp]: Angular distance is 0.200241 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.568645009] [grasp]: Angular distance is 0.203092 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.585889378] [grasp]: Angular distance is 0.204873 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.602177171] [grasp]: Angular distance is 0.205194 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.619155846] [grasp]: Angular distance is 0.198565 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.635992325] [grasp]: Angular distance is 0.19712 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.652379716] [grasp]: Angular distance is 0.190825 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.667090848] [grasp]: Angular distance is 0.185569 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.684133622] [grasp]: Angular distance is 0.184115 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.699520437] [grasp]: Angular distance is 0.1836 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.718643659] [grasp]: Angular distance is 0.183407 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.734514762] [grasp]: Angular distance is 0.18868 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.749793780] [grasp]: Angular distance is 0.183109 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.764282118] [grasp]: Angular distance is 0.182945 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.780815605] [grasp]: Angular distance is 0.183341 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.797452989] [grasp]: Angular distance is 0.183513 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.812319317] [grasp]: Angular distance is 0.183491 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.828205421] [grasp]: Angular distance is 0.182335 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.844247119] [grasp]: Angular distance is 0.180688 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.859818130] [grasp]: Angular distance is 0.17954 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.875320542] [grasp]: Angular distance is 0.178973 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.890081573] [grasp]: Angular distance is 0.178441 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.905429390] [grasp]: Angular distance is 0.177769 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.920446714] [grasp]: Angular distance is 0.177227 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.935510338] [grasp]: Angular distance is 0.176126 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.950977751] [grasp]: Angular distance is 0.175074 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.968423215] [grasp]: Angular distance is 0.1745 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.982982351] [grasp]: Angular distance is 0.173576 while the min is 1.48353
+[gzserver-1] [INFO] [1774069275.998731457] [grasp]: Angular distance is 0.171918 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.013894778] [grasp]: Angular distance is 0.172166 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.030797656] [grasp]: Angular distance is 0.171974 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.046818855] [grasp]: Angular distance is 0.171838 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.062241070] [grasp]: Angular distance is 0.171733 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.078692559] [grasp]: Angular distance is 0.171509 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.093369992] [grasp]: Angular distance is 0.171524 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.108414416] [grasp]: Angular distance is 0.171386 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.125134198] [grasp]: Angular distance is 0.171391 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.141394391] [grasp]: Angular distance is 0.171533 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.156725408] [grasp]: Angular distance is 0.171665 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.171139548] [grasp]: Angular distance is 0.171587 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.187059250] [grasp]: Angular distance is 0.171459 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.203209946] [grasp]: Angular distance is 0.171465 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.220096324] [grasp]: Angular distance is 0.171216 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.234786757] [grasp]: Angular distance is 0.171232 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.251506039] [grasp]: Angular distance is 0.170424 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.267735933] [grasp]: Angular distance is 0.170429 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.283062050] [grasp]: Angular distance is 0.170255 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.298863654] [grasp]: Angular distance is 0.170291 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.316908704] [grasp]: Angular distance is 0.170231 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.335116948] [grasp]: Angular distance is 0.1702 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.350404166] [grasp]: Angular distance is 0.170138 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.368583312] [grasp]: Angular distance is 0.170032 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.383169947] [grasp]: Angular distance is 0.169937 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.399644235] [grasp]: Angular distance is 0.169862 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.414237370] [grasp]: Angular distance is 0.169782 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.428944203] [grasp]: Angular distance is 0.16969 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.444387517] [grasp]: Angular distance is 0.169586 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.459956827] [grasp]: Angular distance is 0.169196 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.479494238] [grasp]: Angular distance is 0.168417 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.494724958] [grasp]: Angular distance is 0.16788 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.509527388] [grasp]: Angular distance is 0.167295 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.524166722] [grasp]: Angular distance is 0.166705 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.539333943] [grasp]: Angular distance is 0.166196 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.553750483] [grasp]: Angular distance is 0.165766 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.569393091] [grasp]: Angular distance is 0.165379 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.583960827] [grasp]: Angular distance is 0.164952 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.600635511] [grasp]: Angular distance is 0.164518 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.618074775] [grasp]: Angular distance is 0.164183 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.634993652] [grasp]: Angular distance is 0.163929 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.649934779] [grasp]: Angular distance is 0.163595 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.664605912] [grasp]: Angular distance is 0.163315 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.680690510] [grasp]: Angular distance is 0.162997 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.696756708] [grasp]: Angular distance is 0.162503 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.711407042] [grasp]: Angular distance is 0.162101 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.725885980] [grasp]: Angular distance is 0.16189 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.741288395] [grasp]: Angular distance is 0.161665 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.756209622] [grasp]: Angular distance is 0.161284 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.772602313] [grasp]: Angular distance is 0.161095 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.788637112] [grasp]: Angular distance is 0.160744 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.805252897] [grasp]: Angular distance is 0.160321 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.822070376] [grasp]: Angular distance is 0.159911 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.836553514] [grasp]: Angular distance is 0.159561 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.851880831] [grasp]: Angular distance is 0.15934 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.869229397] [grasp]: Angular distance is 0.159072 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.885111700] [grasp]: Angular distance is 0.158685 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.901499891] [grasp]: Angular distance is 0.158334 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.924030728] [grasp]: Angular distance is 0.15799 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.943717535] [grasp]: Angular distance is 0.157729 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.958366869] [grasp]: Angular distance is 0.157456 while the min is 1.48353
+[gzserver-1] [INFO] [1774069276.978465867] [grasp]: Angular distance is 0.157203 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.006022877] [grasp]: Angular distance is 0.156929 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.027922031] [grasp]: Angular distance is 0.156906 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.047616538] [grasp]: Angular distance is 0.156606 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.063485042] [grasp]: Angular distance is 0.156484 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.078886757] [grasp]: Angular distance is 0.156555 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.093853283] [grasp]: Angular distance is 0.156695 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.108344721] [grasp]: Angular distance is 0.156351 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.123174650] [grasp]: Angular distance is 0.155969 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.138598664] [grasp]: Angular distance is 0.155706 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.154130976] [grasp]: Angular distance is 0.155453 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.169168101] [grasp]: Angular distance is 0.155225 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.183762536] [grasp]: Angular distance is 0.155019 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.198661264] [grasp]: Angular distance is 0.154792 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.215080353] [grasp]: Angular distance is 0.154687 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.230945956] [grasp]: Angular distance is 0.154433 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.249276499] [grasp]: Angular distance is 0.154268 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.267131752] [grasp]: Angular distance is 0.154012 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.283232650] [grasp]: Angular distance is 0.153816 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.300651114] [grasp]: Angular distance is 0.153573 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.317715888] [grasp]: Angular distance is 0.153356 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.335580641] [grasp]: Angular distance is 0.153176 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.350345272] [grasp]: Angular distance is 0.152997 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.364963006] [grasp]: Angular distance is 0.152803 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.380163127] [grasp]: Angular distance is 0.152617 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.396514218] [grasp]: Angular distance is 0.152443 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.410960957] [grasp]: Angular distance is 0.152278 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.426308073] [grasp]: Angular distance is 0.152108 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.440804411] [grasp]: Angular distance is 0.151867 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.455923933] [grasp]: Angular distance is 0.15161 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.470919759] [grasp]: Angular distance is 0.151358 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.489066705] [grasp]: Angular distance is 0.151084 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.505197702] [grasp]: Angular distance is 0.150799 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.519742438] [grasp]: Angular distance is 0.150547 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.534405671] [grasp]: Angular distance is 0.150344 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.549659890] [grasp]: Angular distance is 0.150146 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.564537618] [grasp]: Angular distance is 0.150005 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.579818536] [grasp]: Angular distance is 0.149823 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.595020856] [grasp]: Angular distance is 0.149616 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.609678290] [grasp]: Angular distance is 0.149413 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.627155153] [grasp]: Angular distance is 0.149204 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.642470370] [grasp]: Angular distance is 0.149021 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.658546269] [grasp]: Angular distance is 0.148802 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.674005882] [grasp]: Angular distance is 0.148596 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.689773989] [grasp]: Angular distance is 0.148403 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.705427297] [grasp]: Angular distance is 0.148188 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.721105605] [grasp]: Angular distance is 0.148015 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.736680116] [grasp]: Angular distance is 0.147779 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.752232127] [grasp]: Angular distance is 0.147604 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.766861761] [grasp]: Angular distance is 0.147408 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.781898086] [grasp]: Angular distance is 0.147201 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.800485321] [grasp]: Angular distance is 0.146972 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.815162554] [grasp]: Angular distance is 0.146786 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.829866087] [grasp]: Angular distance is 0.146571 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.844589119] [grasp]: Angular distance is 0.146358 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.859192254] [grasp]: Angular distance is 0.146179 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.873701692] [grasp]: Angular distance is 0.145989 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.890692667] [grasp]: Angular distance is 0.145829 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.905797090] [grasp]: Angular distance is 0.145675 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.922023484] [grasp]: Angular distance is 0.145524 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.936615919] [grasp]: Angular distance is 0.145344 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.951312352] [grasp]: Angular distance is 0.145215 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.967420549] [grasp]: Angular distance is 0.14501 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.983174956] [grasp]: Angular distance is 0.144775 while the min is 1.48353
+[gzserver-1] [INFO] [1774069277.998061084] [grasp]: Angular distance is 0.144552 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.013591896] [grasp]: Angular distance is 0.144283 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.028946612] [grasp]: Angular distance is 0.144066 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.044129532] [grasp]: Angular distance is 0.14389 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.061335202] [grasp]: Angular distance is 0.143703 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.076296428] [grasp]: Angular distance is 0.143525 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.091654745] [grasp]: Angular distance is 0.143262 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.106145082] [grasp]: Angular distance is 0.143021 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.120732518] [grasp]: Angular distance is 0.142795 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.135567547] [grasp]: Angular distance is 0.142584 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.151612146] [grasp]: Angular distance is 0.142401 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.166441975] [grasp]: Angular distance is 0.142244 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.181944487] [grasp]: Angular distance is 0.142037 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.198157182] [grasp]: Angular distance is 0.14184 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.214171882] [grasp]: Angular distance is 0.141628 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.230082484] [grasp]: Angular distance is 0.141454 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.246146883] [grasp]: Angular distance is 0.141287 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.261758192] [grasp]: Angular distance is 0.141133 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.276943413] [grasp]: Angular distance is 0.140986 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.292243630] [grasp]: Angular distance is 0.140861 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.310449775] [grasp]: Angular distance is 0.140676 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.332996112] [grasp]: Angular distance is 0.140505 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.349695294] [grasp]: Angular distance is 0.140371 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.365159608] [grasp]: Angular distance is 0.140286 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.380452626] [grasp]: Angular distance is 0.140178 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.397055311] [grasp]: Angular distance is 0.140039 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.412594422] [grasp]: Angular distance is 0.139911 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.427676145] [grasp]: Angular distance is 0.139799 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.442846666] [grasp]: Angular distance is 0.139712 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.459810643] [grasp]: Angular distance is 0.139605 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.475063161] [grasp]: Angular distance is 0.13951 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.490904165] [grasp]: Angular distance is 0.139439 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.507265956] [grasp]: Angular distance is 0.139353 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.522634272] [grasp]: Angular distance is 0.13919 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.537131810] [grasp]: Angular distance is 0.138979 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.551672147] [grasp]: Angular distance is 0.138788 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.566212283] [grasp]: Angular distance is 0.138575 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.583252757] [grasp]: Angular distance is 0.13831 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.599611449] [grasp]: Angular distance is 0.138138 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.615208259] [grasp]: Angular distance is 0.137903 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.632227433] [grasp]: Angular distance is 0.137742 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.649404104] [grasp]: Angular distance is 0.137511 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.665367005] [grasp]: Angular distance is 0.1373 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.679979740] [grasp]: Angular distance is 0.137076 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.694494977] [grasp]: Angular distance is 0.13696 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.709745696] [grasp]: Angular distance is 0.136706 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.725803395] [grasp]: Angular distance is 0.13653 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.741751197] [grasp]: Angular distance is 0.136327 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.757140112] [grasp]: Angular distance is 0.13613 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.774848769] [grasp]: Angular distance is 0.135906 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.791191261] [grasp]: Angular distance is 0.135653 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.808590826] [grasp]: Angular distance is 0.13542 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.825699598] [grasp]: Angular distance is 0.135222 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.840488629] [grasp]: Angular distance is 0.135018 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.855411656] [grasp]: Angular distance is 0.134796 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.870214286] [grasp]: Angular distance is 0.134558 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.884818921] [grasp]: Angular distance is 0.134356 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.900549628] [grasp]: Angular distance is 0.134188 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.918637976] [grasp]: Angular distance is 0.134004 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.934484980] [grasp]: Angular distance is 0.133798 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.948997017] [grasp]: Angular distance is 0.133602 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.964446131] [grasp]: Angular distance is 0.133409 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.979102965] [grasp]: Angular distance is 0.133231 while the min is 1.48353
+[gzserver-1] [INFO] [1774069278.994297085] [grasp]: Angular distance is 0.133025 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.009754398] [grasp]: Angular distance is 0.132789 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.025067316] [grasp]: Angular distance is 0.132589 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.041626202] [grasp]: Angular distance is 0.132389 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.057549404] [grasp]: Angular distance is 0.132197 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.075428457] [grasp]: Angular distance is 0.13203 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.091779848] [grasp]: Angular distance is 0.131864 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.109647202] [grasp]: Angular distance is 0.131713 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.125201814] [grasp]: Angular distance is 0.131548 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.140166040] [grasp]: Angular distance is 0.131305 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.154685177] [grasp]: Angular distance is 0.131049 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.169378510] [grasp]: Angular distance is 0.130857 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.184186739] [grasp]: Angular distance is 0.130704 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.200569430] [grasp]: Angular distance is 0.130544 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.215572355] [grasp]: Angular distance is 0.130377 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.230773475] [grasp]: Angular distance is 0.130241 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.246712077] [grasp]: Angular distance is 0.130098 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.262845974] [grasp]: Angular distance is 0.129918 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.279523857] [grasp]: Angular distance is 0.129695 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.295826150] [grasp]: Angular distance is 0.129487 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.313046119] [grasp]: Angular distance is 0.129311 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.328305838] [grasp]: Angular distance is 0.129149 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.342952072] [grasp]: Angular distance is 0.129003 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.358348287] [grasp]: Angular distance is 0.128843 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.372765627] [grasp]: Angular distance is 0.128684 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.391563657] [grasp]: Angular distance is 0.128526 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.406383987] [grasp]: Angular distance is 0.128354 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.425550708] [grasp]: Angular distance is 0.128176 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.440210941] [grasp]: Angular distance is 0.128007 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.454751379] [grasp]: Angular distance is 0.127825 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.470281790] [grasp]: Angular distance is 0.127624 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.485282615] [grasp]: Angular distance is 0.127419 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.499732355] [grasp]: Angular distance is 0.127236 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.514581883] [grasp]: Angular distance is 0.127069 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.529696205] [grasp]: Angular distance is 0.126897 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.544108045] [grasp]: Angular distance is 0.126733 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.558867877] [grasp]: Angular distance is 0.126578 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.573401713] [grasp]: Angular distance is 0.126424 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.588143145] [grasp]: Angular distance is 0.126284 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.605748505] [grasp]: Angular distance is 0.126164 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.620854828] [grasp]: Angular distance is 0.126051 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.635822954] [grasp]: Angular distance is 0.125933 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.653122121] [grasp]: Angular distance is 0.125798 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.667831753] [grasp]: Angular distance is 0.125646 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.682917576] [grasp]: Angular distance is 0.125525 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.697733306] [grasp]: Angular distance is 0.125441 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.718765280] [grasp]: Angular distance is 0.125346 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.734580485] [grasp]: Angular distance is 0.125217 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.751025675] [grasp]: Angular distance is 0.125095 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.766115097] [grasp]: Angular distance is 0.124968 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.784687133] [grasp]: Angular distance is 0.124854 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.801186020] [grasp]: Angular distance is 0.124763 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.816797430] [grasp]: Angular distance is 0.124679 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.833197021] [grasp]: Angular distance is 0.124607 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.847873754] [grasp]: Angular distance is 0.124513 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.864901328] [grasp]: Angular distance is 0.124415 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.880808131] [grasp]: Angular distance is 0.124307 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.896490239] [grasp]: Angular distance is 0.124196 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.912949928] [grasp]: Angular distance is 0.124082 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.928130048] [grasp]: Angular distance is 0.123939 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.942797581] [grasp]: Angular distance is 0.123784 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.958375792] [grasp]: Angular distance is 0.123662 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.974496489] [grasp]: Angular distance is 0.123571 while the min is 1.48353
+[gzserver-1] [INFO] [1774069279.989401117] [grasp]: Angular distance is 0.123481 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.004478540] [grasp]: Angular distance is 0.123379 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.019213072] [grasp]: Angular distance is 0.123283 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.035076776] [grasp]: Angular distance is 0.123193 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.051642662] [grasp]: Angular distance is 0.123091 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.066776084] [grasp]: Angular distance is 0.122991 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.082197098] [grasp]: Angular distance is 0.122859 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.098420593] [grasp]: Angular distance is 0.122709 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.114014003] [grasp]: Angular distance is 0.122595 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.129403319] [grasp]: Angular distance is 0.122507 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.145250023] [grasp]: Angular distance is 0.122421 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.159921656] [grasp]: Angular distance is 0.122336 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.176249648] [grasp]: Angular distance is 0.122267 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.192336746] [grasp]: Angular distance is 0.122192 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.207949656] [grasp]: Angular distance is 0.122111 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.226063604] [grasp]: Angular distance is 0.122031 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.242303198] [grasp]: Angular distance is 0.121924 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.257246924] [grasp]: Angular distance is 0.121829 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.272637340] [grasp]: Angular distance is 0.12176 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.287712563] [grasp]: Angular distance is 0.121696 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.302923083] [grasp]: Angular distance is 0.121635 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.318098804] [grasp]: Angular distance is 0.121566 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.332651640] [grasp]: Angular distance is 0.1215 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.348513144] [grasp]: Angular distance is 0.121448 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.363995156] [grasp]: Angular distance is 0.121381 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.380865335] [grasp]: Angular distance is 0.121303 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.397171028] [grasp]: Angular distance is 0.121242 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.411763163] [grasp]: Angular distance is 0.121184 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.426571793] [grasp]: Angular distance is 0.121134 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.442198802] [grasp]: Angular distance is 0.121084 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.456927134] [grasp]: Angular distance is 0.121023 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.471493570] [grasp]: Angular distance is 0.12096 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.488859337] [grasp]: Angular distance is 0.120889 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.504413648] [grasp]: Angular distance is 0.120815 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.519291576] [grasp]: Angular distance is 0.120727 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.545351525] [grasp]: Angular distance is 0.120631 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.559960760] [grasp]: Angular distance is 0.120566 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.574947485] [grasp]: Angular distance is 0.120516 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.591678467] [grasp]: Angular distance is 0.120465 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.606187605] [grasp]: Angular distance is 0.120422 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.621166530] [grasp]: Angular distance is 0.120376 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.637072733] [grasp]: Angular distance is 0.120327 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.651476973] [grasp]: Angular distance is 0.120282 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.670574196] [grasp]: Angular distance is 0.120243 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.686864789] [grasp]: Angular distance is 0.120205 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.704740642] [grasp]: Angular distance is 0.120159 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.719439375] [grasp]: Angular distance is 0.120098 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.734925588] [grasp]: Angular distance is 0.120037 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.749408126] [grasp]: Angular distance is 0.11998 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.764023461] [grasp]: Angular distance is 0.119924 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.778985287] [grasp]: Angular distance is 0.119877 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.794175908] [grasp]: Angular distance is 0.119833 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.809448426] [grasp]: Angular distance is 0.119792 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.827069186] [grasp]: Angular distance is 0.119755 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.842371903] [grasp]: Angular distance is 0.119721 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.857028037] [grasp]: Angular distance is 0.119681 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.872392754] [grasp]: Angular distance is 0.119643 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.889649622] [grasp]: Angular distance is 0.119609 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.904230958] [grasp]: Angular distance is 0.119568 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.919625273] [grasp]: Angular distance is 0.11952 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.934717696] [grasp]: Angular distance is 0.119468 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.950470602] [grasp]: Angular distance is 0.119424 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.967323081] [grasp]: Angular distance is 0.119386 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.982550301] [grasp]: Angular distance is 0.119351 while the min is 1.48353
+[gzserver-1] [INFO] [1774069280.997096337] [grasp]: Angular distance is 0.119319 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.013613125] [grasp]: Angular distance is 0.11929 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.028954541] [grasp]: Angular distance is 0.119259 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.045260234] [grasp]: Angular distance is 0.119229 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.062197810] [grasp]: Angular distance is 0.119205 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.080024465] [grasp]: Angular distance is 0.11918 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.096432055] [grasp]: Angular distance is 0.119149 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.110917493] [grasp]: Angular distance is 0.119172 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.126370107] [grasp]: Angular distance is 0.119335 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.143338883] [grasp]: Angular distance is 0.119459 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.158335208] [grasp]: Angular distance is 0.119492 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.175010092] [grasp]: Angular distance is 0.119484 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.190078716] [grasp]: Angular distance is 0.119441 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.205666326] [grasp]: Angular distance is 0.119377 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.220896846] [grasp]: Angular distance is 0.119301 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.238131215] [grasp]: Angular distance is 0.119221 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.260454458] [grasp]: Angular distance is 0.119153 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.275231689] [grasp]: Angular distance is 0.119081 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.290020819] [grasp]: Angular distance is 0.118996 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.305352836] [grasp]: Angular distance is 0.118911 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.319994570] [grasp]: Angular distance is 0.118832 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.334847899] [grasp]: Angular distance is 0.118753 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.349641829] [grasp]: Angular distance is 0.118681 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.364446459] [grasp]: Angular distance is 0.118617 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.379257590] [grasp]: Angular distance is 0.118557 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.396994646] [grasp]: Angular distance is 0.118475 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.411649380] [grasp]: Angular distance is 0.118389 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.426705504] [grasp]: Angular distance is 0.1183 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.441236141] [grasp]: Angular distance is 0.118215 while the min is 1.48353
+[gzserver-1] [INFO] [1774069281.455644381] [grasp]: Angular distance is 0.118162 while the min is 1.48353
