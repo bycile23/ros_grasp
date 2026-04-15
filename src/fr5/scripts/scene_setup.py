@@ -11,8 +11,12 @@ class SceneSetup(Node):
         super().__init__('scene_setup_node')
         self.pub = self.create_publisher(CollisionObject, '/collision_object', 10)
         time.sleep(1.0)
-        self.add_table()
-        self.add_cylinder()
+        
+        # ==========================================
+        # 【修改点】：暂时注释掉生成方块和绿色罐子的调用
+        # ==========================================
+        # self.add_table()
+        # self.add_cylinder()
 
     def add_cylinder(self):
         co = CollisionObject()

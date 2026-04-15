@@ -52,7 +52,8 @@ class MoveSpeedDemo(Node):
             self.get_logger().info("等待关节数据...")
             rclpy.spin_once(self, timeout_sec=0.1)
 
-    def plan_path(self, target_joints):
+    # 【核心修改 1】：增加 speed_scale 参数，利用 MoveIt 原生机制限制速度
+    def plan_path(self, target_joints, speed_scale=1.0):
         """规划路径"""
         if self.current_joint_state is None: return None
 
@@ -71,8 +72,9 @@ class MoveSpeedDemo(Node):
         req.num_planning_attempts = 1 
         req.allowed_planning_time = 2.0
         
-        req.max_velocity_scaling_factor = 1.0
-        req.max_acceleration_scaling_factor = 1.0
+        # 【核心生效处】将限制系数直接传给 MoveIt
+        req.max_velocity_scaling_factor = float(speed_scale)
+        req.max_acceleration_scaling_factor = float(speed_scale)
 
         constraints = Constraints() #创建约束
         for i, angle in enumerate(target_joints):
@@ -98,41 +100,13 @@ class MoveSpeedDemo(Node):
             self.get_logger().error("规划失败")
             return None
 
-    def scale_trajectory_speed(self, trajectory, scale):
-        """变速处理"""
-        if not trajectory: return None
-        new_traj = JointTrajectory()
-        new_traj.header = trajectory.header
-        new_traj.joint_names = trajectory.joint_names
-
-        for old_point in trajectory.points:
-            new_point = JointTrajectoryPoint()
-            new_point.positions = old_point.positions
-            
-            time_scale = 1.0 / scale
-            old_sec = old_point.time_from_start.sec
-            old_nanosec = old_point.time_from_start.nanosec
-            total_old_sec = old_sec + (old_nanosec * 1e-9)
-            total_new_sec = total_old_sec * time_scale
-            
-            new_point.time_from_start.sec = int(total_new_sec)
-            new_point.time_from_start.nanosec = int((total_new_sec - int(total_new_sec)) * 1e9)
-            
-            if old_point.velocities:
-                new_point.velocities = [v * scale for v in old_point.velocities]
-            if old_point.accelerations:
-                new_point.accelerations = [a * scale * scale for a in old_point.accelerations]
-                
-            new_traj.points.append(new_point)
-        return new_traj
-
     def execute_trajectory(self, trajectory):
         """执行轨迹"""
         if not trajectory: return
 
-        # 增加缓冲时间，防止瞬移
+        # 【修改点1】：将执行前的缓冲时间从 0.5秒 降到 0.1秒，让动作更紧凑
         now = self.get_clock().now()
-        delay = Duration(seconds=0.5)
+        delay = Duration(seconds=0.1)
         trajectory.header.stamp = (now + delay).to_msg()
         
         self.trajectory_publisher.publish(trajectory)
@@ -140,48 +114,43 @@ class MoveSpeedDemo(Node):
         last_point = trajectory.points[-1]
         duration = last_point.time_from_start.sec + last_point.time_from_start.nanosec * 1e-9
         
-        self.get_logger().info(f"执行中... 耗时: {duration:.2f} 秒")
-        self.spin_and_sleep(duration + 0.5)
+        self.get_logger().info(f"执行中... 规划总耗时: {duration:.2f} 秒")
+        # 【修改点2】：将动作执行完的等待时间从 0.5秒 降到 0.2秒，避免拖沓
+        self.spin_and_sleep(duration + 0.2)
+
 
 def main(args=None):
     rclpy.init(args=args)
     node = MoveSpeedDemo()
     node.wait_for_joint_state()
-    node.spin_and_sleep(1.0)
+    node.spin_and_sleep(0.5) # 初始启动仅等0.5秒
 
     try:
-        target_joints = [0.39, -0.67, -0.37, 0.0, 1.05, 0.45]
-        home_joints = [0.0] * 6
-
-        # 流程：去(快) -> 回(快) -> 去(慢) -> 回(快)
+        target_joints = [1.2, -0.9, 0.6, -0.5, 0.9, 0.8]   # 大幅摆动
+        home_joints = [0.0] * 6                            # 原点不变
 
         # --- 1. 去程 (快) ---
         print("\n=== 1/4 去程: 快速 (Scale 1.0) ===")
-        traj_to_target = node.plan_path(target_joints)
+        traj_to_target = node.plan_path(target_joints, speed_scale=1.0)
         if traj_to_target:
             node.execute_trajectory(traj_to_target)
         
         # --- 2. 回程 (快) ---
-        print("\n=== 2/4 回程: 快速归位 ===")
-        traj_to_home = node.plan_path(home_joints)
+        print("\n=== 2/4 回程: 快速归位 (Scale 1.0) ===")
+        traj_to_home = node.plan_path(home_joints, speed_scale=1.0)
         if traj_to_home:
             node.execute_trajectory(traj_to_home)
-        
-        node.spin_and_sleep(0.5)
 
-        # --- 3. 去程 (慢) ---
-        print("\n=== 3/4 去程: 慢速执行 (Scale 0.4) ===")
-        # 复用第一次规划的路径并减速
-        # 提示：如果你想让最后一次回程也是慢速，可以在步骤4里用同样的方法
-        slow_traj = node.scale_trajectory_speed(traj_to_target, 0.4)
-        node.execute_trajectory(slow_traj)
-
-        node.spin_and_sleep(0.5)
+        # --- 3. 去程 (慢 - 严格 1:3 比例) ---
+        # 【核心修改3】：速度系数设为 0.33，MoveIt 会自动将这段轨迹的时间拉长到快程的 3倍！
+        print("\n=== 3/4 去程: 慢速执行 (Scale 0.33) ===")
+        slow_traj_to_target = node.plan_path(target_joints, speed_scale=0.33)
+        if slow_traj_to_target:
+            node.execute_trajectory(slow_traj_to_target)
 
         # --- 4. 回程 (快 - 结束动作) ---
         print("\n=== 4/4 回程: 结束演示，快速归位 ===")
-        # 此时机械臂在目标点，我们重新规划一条回 Home 的路径
-        traj_final_home = node.plan_path(home_joints)
+        traj_final_home = node.plan_path(home_joints, speed_scale=1.0)
         if traj_final_home:
             node.execute_trajectory(traj_final_home)
         

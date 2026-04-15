@@ -24,9 +24,7 @@ install(DIRECTORY launch meshes rviz urdf config worlds
 install(PROGRAMS
   scripts/simple_vision.py
   scripts/grasping_demo.py
-  scripts/mimic_fixer.py
   scripts/scene_setup.py
-  scripts/monitor.py
   scripts/random_target.py
   DESTINATION lib/${PROJECT_NAME}
 )
